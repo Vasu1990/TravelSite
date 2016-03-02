@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- /flight_alternative.html  [XR&CO'2014], Mon, 22 Feb 2016 10:44:10 GMT -->
+<head>
+  <title>BE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta charset="utf-8" /><link rel="icon" href="favicon.png" />
+  <meta content="eTravel.flights.searches.new" name="js-namespace">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+  <link href="css/calendar.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/jquery.ui.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>    
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,700' rel='stylesheet' type='text/css'>  
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>  
+<body>  
+<!-- // authorize // -->
+	<div class="overlay"></div>
+	<div class="autorize-popup">
+		<div class="autorize-tabs">
+			<a href="#" class="autorize-tab-a current">Sign in</a>
+			<a href="#" class="autorize-tab-b">Register</a>
+			<a href="#" class="autorize-close"></a>
+			<div class="clear"></div>
+		</div>
+		<section class="autorize-tab-content">
+			<div class="autorize-padding">
+				<h6 class="autorize-lbl">Welocome! Login in to Your Accont</h6>
+				<input type="text" value="" placeholder="Name">
+				<input type="text" value="" placeholder="Password">
+				<footer class="autorize-bottom">
+					<button class="authorize-btn">Login</button>
+					<a href="#" class="authorize-forget-pass">Forgot your password?</a>
+					<div class="clear"></div>
+				</footer>
+			</div>
+		</section>
+		<section class="autorize-tab-content">
+			<div class="autorize-padding">
+				<h6 class="autorize-lbl">Register for Your Account</h6>
+				<input type="text" value="" placeholder="Name">
+				<input type="text" value="" placeholder="Password">
+				<footer class="autorize-bottom">
+					<button class="authorize-btn">Registration</button>
+					<div class="clear"></div>
+				</footer>
+			</div>
+		</section>
+	</div>
+<!-- \\ authorize \\-->
+
+<header id="top">
+	<div class="header-a">
+		<div class="wrapper-padding">
+			<div class="header-phone"><span>1 - 555 - 555 - 555</span></div>
+			<div class="header-account">
+				<a href="#">My account</a>
+			</div>
+			<div class="header-social">
+				<a href="twitter.com" class="social-twitter"></a>
+				<a href="facebook.com" class="social-facebook"></a>
+				<a href="vimeo.com" class="social-vimeo"></a>
+				<a href="pinterest.com" class="social-pinterest"></a>
+				<a href="instagram.com" class="social-instagram"></a>
+			</div>
+			<div class="header-viewed">
+				<a href="#" class="header-viewed-btn">recently viewed</a>
+				<!-- // viewed drop // -->
+				<div class="viewed-drop">
+					<div class="viewed-drop-a">
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-01.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Hotel Bright Land</a></div>
+								<div class="viewed-item-cat">location: Shimla,HP</div>
+								<div class="viewed-price">Rs.3000/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-02.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Ermin's Adventure Tour</a></div>
+								<div class="viewed-item-cat">location: dubai</div>
+								<div class="viewed-price">Rs.11000/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-03.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Hotel Himgiri</a></div>
+								<div class="viewed-item-cat">location: Shimla,HP</div>
+								<div class="viewed-price">Rs.2600/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+					</div>
+				</div>
+				<!-- \\ viewed drop \\ -->
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="header-b">
+		<!-- // mobile menu // -->
+		<div class="mobile-menu">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="index.html?hotelTab">Hotels</a>
+					</li>
+					<li><a href="index.html?holidayTab">Holidays</a></li>
+					<li><a href="index.html?flightTab">Flights</a>
+					</li>
+					<li><a href="index.html?activityTab">Tour & Activities</a>
+					</li>
+					<li><a href="hotel_list.html">Compare</a>
+						<span class="compare-badge">4</span>
+					</li>
+					<li><a href="about_us.html">About</a>
+					</li>
+					<li><a href="contacts.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- \\ mobile menu \\ -->
+
+		<div class="wrapper-padding">
+			<div class="header-logo"><a href="index.html"><img alt="" src="img/logo.png" /></a>
+				<h1 class="header-logo-text">break eazy</h1>
+			</div>
+			<div class="header-right">
+				<div class="hdr-srch">
+					<a href="#" class="hdr-srch-btn"></a>
+				</div>
+				<div class="hdr-srch-overlay">
+					<div class="hdr-srch-overlay-a">
+						<input type="text" value="" placeholder="what are you looking for ?...">
+						<a href="#" class="srch-close"></a>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="hdr-srch-devider"></div>
+				<a href="#" class="menu-btn"></a>
+				<nav class="header-nav">
+					<ul>
+						<li><a href="index.html">Home</a>
+						</li>
+						<li><a href="index.html?hotelTab">Hotels</a>
+						</li>
+						<li><a href="index.html?holidayTab">Holidays</a>
+						</li>
+						<li><a href="index.html?flightTab">Flights</a>
+						</li>
+						<li><a href="index.html?activityTab">Tour & Activities</a></li>
+						<li><a href="compare.html">Compare</a>
+							<span class="compare-badge">0</span>
+						</li>
+						</li>
+						<li><a href="about_us.html">About</a>
+						</li>
+						<li><a href="contacts.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</header>
+
+
+<!-- main-cont -->
+<div class="main-cont">
+  <div class="body-wrapper">
+    <div class="wrapper-padding compare-container">
+    <div class="page-head compare-header">
+      <div class="page-title">Compare - <span>SHORTLISTED ITEMS</span></div>
+
+      <div class="clear"></div>
+    </div>
+  		<div class="compare-row">
+			<div class="compare-column">
+				<div class="icons-item compare-f-row">
+					<div class="icons-item-img" style="
+    text-align: center;
+"><img alt="" src="img/icons-i-01.png"></div>
+					<div class="icons-item-lbl">Excellent Planning</div>
+					<div class="icons-item-txt">We compare them all - including scheduled and budget carriers, holiday and activity providers - so you always get the best deal.We search through thousands of websites to find you the very best travel deals</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="compare-column">
+				<div class="catalog-i tour-grid fly-in appeared">
+						<div class="offer-slider-txt">
+							<div class="offer-slider-link"><a href="holiday_detail.html">amazing france holiday</a></div>
+							<div class="offer-slider-l">
+								<div class="offer-slider-location">Duration / 11 days</div>
+								<nav class="stars">
+									<ul>
+										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+									</ul>
+									<div class="clear"></div>
+								</nav>
+								<b class="compare-price">Rs.91,000/-</b></div>
+							<div class="clear"></div>
+						</div>
+
+						<a href="#" class="offer-slider-img compare-img" style="">
+							<img alt="" src="img/tour-01-g.jpg">
+						</a>
+
+						<div class="compare-img-footer">
+							<div class="badge-fav pull-right">
+								<span>+ Add To Fav</span>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+			 	 </div>
+			</div>
+			<div class="compare-column">
+				<div class="catalog-i tour-grid fly-in appeared">
+					<div class="offer-slider-txt">
+						<div class="offer-slider-link"><a href="holiday_detail.html">great italy holiday</a></div>
+						<div class="offer-slider-l">
+							<div class="offer-slider-location">Duration / 11 days</div>
+							<nav class="stars">
+								<ul>
+									<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+									<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+								</ul>
+								<div class="clear"></div>
+							</nav>
+							<b class="compare-price">Rs.59,000/-</b></div>
+						<div class="clear"></div>
+					</div>
+
+					<a href="#" class="offer-slider-img compare-img" style="">
+						<img alt="" src="img/tour-01-g.jpg">
+					</a>
+
+					<div class="compare-img-footer">
+						<div class="badge-fav pull-right">
+							<span>+ Add To Fav</span>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div><div class="compare-column">
+			<div class="catalog-i tour-grid fly-in appeared">
+				<div class="offer-slider-txt">
+					<div class="offer-slider-link"><a href="holiday_detail.html">Old Europe holiday</a></div>
+					<div class="offer-slider-l">
+						<div class="offer-slider-location">Duration / 11 days</div>
+						<nav class="stars">
+							<ul>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+							</ul>
+							<div class="clear"></div>
+						</nav>
+						<b class="compare-price">Rs.35,000/-</b></div>
+					<div class="clear"></div>
+				</div>
+
+				<a href="#" class="offer-slider-img compare-img" style="">
+					<img alt="" src="img/tour-01-g.jpg">
+				</a>
+
+				<div class="compare-img-footer">
+					<div class="badge-fav pull-right">
+						<span>+ Add To Fav</span>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+			<div class="compare-column">
+			<div class="catalog-i tour-grid fly-in appeared">
+				<div class="offer-slider-txt">
+					<div class="offer-slider-link"><a href="holiday_detail.html">India - Canada Holiday</a></div>
+					<div class="offer-slider-l">
+						<div class="offer-slider-location">Duration / 11 days</div>
+						<nav class="stars">
+							<ul>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+								<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+							</ul>
+							<div class="clear"></div>
+						</nav>
+						<b class="compare-price">Rs.49,000/-</b></div>
+					<div class="clear"></div>
+				</div>
+
+				<a href="#" class="offer-slider-img compare-img" style="">
+					<img alt="" src="img/tour-01-g.jpg">
+				</a>
+
+				<div class="compare-img-footer">
+					<div class="badge-fav pull-right">
+						<span>+ Add To Fav</span>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="compare-row">
+			<div class="compare-column">
+				<h2 class="h-detail-lbl-a compare-title">Offers</h2>
+			</div>
+			<div class="compare-column">
+				<ul class="compare-offer">
+					<li>Book from paytm 10% cashback</li>
+					<li>Use HDFC Cards for 15% discount</li>
+					<li>Get 10 make my trip points</li>
+				</ul>
+			</div>
+			<div class="compare-column">
+				<ul class="compare-offer">
+					<li>Use Axis Cards for 15% discount</li>
+				</ul>
+			</div>
+			<div class="compare-column">
+				<ul class="compare-offer">
+					<li>Book from paytm 10% cashback</li>
+					<li>Use HDFC Cards for 15% discount</li>
+					<li>Get 10 make my trip points</li>
+				</ul>
+			</div>
+			<div class="compare-column">
+				<ul class="compare-offer">
+					<li>No Offers Available</li>
+				</ul>
+			</div>
+		</div>
+		<div class="compare-row">
+			<div class="compare-column">
+				<h2 class=" h-detail-lbl-a compare-title">Hotel</h2>
+			</div>
+			<div class="compare-column">
+				<div><span href="#">Hotel Saint Malo</span>
+					<nav class="stars">
+						<ul>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div><span href="#">Hotel Salt Lake</span>
+					<nav class="stars">
+						<ul>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div><span href="#">Hotel Saint Malo</span>
+					<nav class="stars">
+						<ul>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div><span href="#">Hotel Beach View</span>
+					<nav class="stars">
+						<ul>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+							<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="compare-row">
+			<div class="compare-column">
+				<h2 class="h-detail-lbl-a compare-title">Transport</h2>
+			</div>
+			<div class="compare-column">
+				<div class="tour-item-footer">
+					<div class="tour-i-holder">
+						<div class="tour-item-icons">
+							<img alt="" src="img/tour-icon-01.png">
+							<span class="tour-item-plus"><img alt="" src="img/tour-icon.png"></span>
+							<img alt="" src="img/tour-icon-02.png">
+						</div>
+						<div class="tour-icon-txt">Air + bus</div>
+						<div class="clear"></div>
+					</div>
+					<div class="tour-duration">Lufthansa + Volvo</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div class="tour-item-footer">
+					<div class="tour-i-holder">
+						<div class="tour-item-icons">
+							<img alt="" src="img/tour-icon-01.png">
+						</div>
+						<div class="tour-icon-txt">Air</div>
+						<div class="clear"></div>
+					</div>
+					<div class="tour-duration">Fly Emirates Airlines</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div class="tour-item-footer">
+					<div class="tour-i-holder">
+						<div class="tour-item-icons">
+							<img alt="" src="img/tour-icon-02.png">
+						</div>
+						<div class="tour-icon-txt">Bus</div>
+						<div class="clear"></div>
+					</div>
+					<div class="tour-duration">Britain Bus Services</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div class="tour-item-footer">
+					<div class="tour-i-holder">
+						<div class="tour-item-icons">
+							<img alt="" src="img/tour-icon-01.png">
+							<span class="tour-item-plus"><img alt="" src="img/tour-icon.png"></span>
+							<img alt="" src="img/tour-icon-02.png">
+						</div>
+						<div class="tour-icon-txt">Air + bus</div>
+						<div class="clear"></div>
+					</div>
+					<div class="tour-duration">Lufthansa + Volvo</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="compare-row">
+			<div class="compare-column">
+				<h2 class="h-detail-lbl-a compare-title">Flight Summary</h2>
+			</div>
+			<div class="compare-column">
+					<div class="h-details-logo"><img alt="" src="img/h-logo.png"></div>
+					<div class="">
+						<div class="alt-lbl">India - France</div>
+						<div class="alt-info"><div class="alt-data-i alt-time">
+							<b>time</b>
+							<span>14H 50M</span>
+						</div><div><b>06.02.16</b></div> One way trip</div>
+						<div class="alt-devider"></div>
+
+						<div class="alt-data-i alt-departure">
+							<b>Departure</b>
+							<span>14:12</span>
+						</div>
+						<div class="alt-data-i alt-arrival">
+							<b>Arrival</b>
+							<span>17:50</span>
+						</div>
+
+						<div class="clear"></div>
+
+					</div>
+			</div>
+			<div class="compare-column">
+					<div class="h-details-logo"><img alt="" src="img/fl-transp-01.png"></div>
+					<div class="">
+						<div class="alt-lbl">India - Italy</div>
+						<div class="alt-info"><div class="alt-data-i alt-time">
+							<b>time</b>
+							<span>14H 50M</span>
+						</div><div><b>06.02.16</b></div> One way trip</div>
+						<div class="alt-devider"></div>
+
+						<div class="alt-data-i alt-departure">
+							<b>Departure</b>
+							<span>14:12</span>
+						</div>
+						<div class="alt-data-i alt-arrival">
+							<b>Arrival</b>
+							<span>17:50</span>
+						</div>
+
+						<div class="clear"></div>
+
+					</div>
+			</div>
+			<div class="compare-column">
+					<p>Flught Not Included</p>
+			</div>
+			<div class="compare-column">
+				<div class="h-details-logo"><img alt="" src="img/h-logo.png"></div>
+				<div class="">
+					<div class="alt-lbl">India - Canada</div>
+					<div class="alt-info"><div class="alt-data-i alt-time">
+						<b>time</b>
+						<span>14H 50M</span>
+					</div><div><b>06.02.16</b></div> One way trip</div>
+					<div class="alt-devider"></div>
+
+					<div class="alt-data-i alt-departure">
+						<b>Departure</b>
+						<span>14:12</span>
+					</div>
+					<div class="alt-data-i alt-arrival">
+						<b>Arrival</b>
+						<span>17:50</span>
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="compare-row">
+			<div class="compare-column">
+				<h2 class="h-detail-lbl-a compare-title">Cities to visit</h2>
+			</div>
+			<div class="compare-column">
+				<ul>
+					<li>Paris</li>
+					<li>Lyon</li>
+					<li>Lille</li>
+					<li>Nantes</li>
+				</ul>
+			</div>
+			<div class="compare-column">
+				<ul>
+					<li>Rome</li>
+					<li>Venice</li>
+					<li>Milan</li>
+					<li>Naples</li>
+				</ul>
+			</div>
+			<div class="compare-column">
+				<ul>
+					<li>Sitges</li>
+					<li>Terrassa</li>
+					<li>Sabadell</li>
+				</ul>
+			</div>
+			<div class="compare-column">
+				<ul>
+					<li>Toronto</li>
+					<li>Vancouver</li>
+					<li>Victoria</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="compare-row">
+			<div class="compare-column">
+				<h2 class="h-detail-lbl-a compare-title">Meals</h2>
+			</div>
+			<div class="compare-column">
+				<div class="compare-meal">
+					<p>Day 1: Meals not Included</p>
+					<p>Day 2: Breakfast Only</p>
+					<p>Day 3: Breakfast Only</p>
+					<p>Day 4: Breakfast Only</p>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div class="compare-meal">
+					<p>No Meal Information Available</p>
+
+				</div>
+			</div>
+			<div class="compare-column">
+				<div class="compare-meal">
+					<p>Day 1: Meals not Included</p>
+					<p>Day 2: Breakfast Only</p>
+					<p>Day 3: Breakfast Only</p>
+					<p>Day 4: Breakfast Only</p>
+				</div>
+			</div>
+			<div class="compare-column">
+				<div class="compare-meal">
+					<p>Day 1: Meals not Included</p>
+					<p>Day 2: Breakfast Only</p>
+					<p>Day 3: Breakfast Only</p>
+					<p>Day 4: Breakfast Only</p>
+				</div>
+			</div>
+		</div>
+		<div class="compare-row compare-seller">
+			<div class="compare-column">
+				<h2 class="h-detail-lbl-a compare-title">Seller</h2>
+			</div>
+			<div class="compare-column">
+				<a href="http://makemytrip.com"><img src="img/mmt.png"/> </a>
+			</div>
+			<div class="compare-column">
+				<a href="http://yatra.com"><img src="img/yatra.png"/> </a>
+			</div>
+			<div class="compare-column">
+				<a href="http://yatra.com"><img src="img/yatra.png"/> </a>
+			</div>
+			<div class="compare-column">
+				<a href="http://booking.com"><img src="img/booking.png"/> </a>
+			</div>
+		</div>
+	</div>
+  </div>  
+</div>
+<!-- /main-cont -->
+
+<footer class="footer-a">
+	<div class="wrapper-padding">
+		<div class="section">
+			<div class="footer-lbl">Get In Touch</div>
+			<div class="footer-adress">Address: 110058 Tilak nagar,<br />New Delhi, India</div>
+			<div class="footer-phones">Telephones: +911 8588850082</div>
+			<div class="footer-email">E-mail: sebi_1.1@hotmail.com</div>
+			<div class="footer-skype">Skype: vasu.nagpal</div>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Featured deals</div>
+			<div class="footer-tours">
+				<!-- // -->
+				<div class="footer-tour">
+					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-01.jpg" /></a></div>
+					<div class="footer-tour-r">
+						<div class="footer-tour-a">amsterdam Tour & Activities</div>
+						<div class="footer-tour-b">location: netherlands</div>
+						<div class="footer-tour-c">Rs.41,000/-</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- \\ -->
+				<!-- // -->
+				<div class="footer-tour">
+					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-02.jpg" /></a></div>
+					<div class="footer-tour-r">
+						<div class="footer-tour-a">Kiev Tour & Activities</div>
+						<div class="footer-tour-b">location: ukraine</div>
+						<div class="footer-tour-c">61,000/-</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- \\ -->
+				<!-- // -->
+				<div class="footer-tour">
+					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-03.jpg" /></a></div>
+					<div class="footer-tour-r">
+						<div class="footer-tour-a">vienna Tour & Activities</div>
+						<div class="footer-tour-b">location: austria</div>
+						<div class="footer-tour-c">Rs.90,000/-</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- \\ -->
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="footer-lbl">newsletter sign up</div>
+			<div class="footer-subscribe">
+				<div class="footer-subscribe-a">
+					<input type="text" placeholder="you email" value="" />
+				</div>
+			</div>
+			<button class="footer-subscribe-btn">Sign up</button>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="modal fade custom-modal" id="fav-dialog-add" tabindex="-1" role="dialog" aria-labelledby="fav-add-head">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="fav-add-head">Favourites List Message</h4>
+				</div>
+				<div class="modal-body">
+					Item Added to Favourites List
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade custom-modal" id="fav-dialog-remove" tabindex="-1" role="dialog" aria-labelledby="fav-rem-head">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="fav-rem-head">Favourites List Message</h4>
+				</div>
+				<div class="modal-body">
+					Item Removed to From Favourites List
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<footer class="footer-b">
+	<div class="wrapper-padding">
+		<div class="footer-left">© Copyright 2015 by breakeazy. All rights reserved.</div>
+		<div class="footer-social">
+			<a href="twitter.com" class="footer-twitter"></a>
+			<a href="facebook.com" class="footer-facebook"></a>
+			<a href="vimeo.com" class="footer-vimeo"></a>
+			<a href="pinterest.com" class="footer-pinterest"></a>
+			<a href="instagram.com" class="footer-instagram"></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</footer>
+
+<!-- // scripts // -->
+  <script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.ui.js"></script>
+  <script src="js/jqeury.appear.js"></script>  
+  <script src="js/script.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
+  <script src="js/custom.select.js"></script>
+<script  src="js/bootstrap.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+		$('.date-inpt').datepicker();
+		$('.custom-select').customSelect();
+		(function($) {
+			$(function() {
+				$('input:checkbox,input:radio,.search-engine-range-selection-container input:radio').styler();
+			})
+		})(jQuery);
+		$(function() {
+			$( "#slider-range" ).slider({
+				range: true,
+				min: 0,
+				max: 1500,
+				values: [ 275, 1100 ],
+				slide: function( event, ui ) {
+					$("#ammount-from").val(ui.values[0]+'$');
+					$("#ammount-to").val(ui.values[1]+'$');
+				}
+			});
+			$("#ammount-from").val($("#slider-range").slider("values",0)+'$');
+			$("#ammount-to").val($("#slider-range").slider("values",1)+'$');
+		});
+
+		$(".side-time").each(function(){
+			var $this = $(this);
+			$this.find('.time-range').slider({
+				range: true,
+				min: 0,
+				max: 24,
+				values: [ 3, 20 ],
+				slide: function( event, ui ) {
+					$this.find(".time-from").text(ui.values[0]);
+					$this.find(".time-to").text(ui.values[1]);
+				}
+			});
+
+			$(this).find(".time-from").text($this.find(".time-range").slider("values",0));
+			$(this).find(".time-to").text($this.find(".time-range").slider("values",1));
+
+		});
+
+		$(function() {
+			$(document.body).on('appear', '.fly-in', function(e, $affected) {
+				$(this).addClass("appeared");
+			});
+			$('.fly-in').appear({force_process: true});
+		});
+	});
+</script>
+<!-- \\ scripts \\ -->
+ 
+</body>  
+
+<!-- /flight_alternative.html  [XR&CO'2014], Mon, 22 Feb 2016 10:44:13 GMT -->
+</html> 

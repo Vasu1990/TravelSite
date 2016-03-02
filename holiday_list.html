@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- /tour_alternative.html  [XR&CO'2014], Mon, 22 Feb 2016 10:44:18 GMT -->
+<head>
+	<title>BE</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta charset="utf-8" /><link rel="icon" href="favicon.png" />
+  <meta content="eTravel.flights.searches.new" name="js-namespace">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <link href="css/calendar.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/jquery.ui.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>    
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,700' rel='stylesheet' type='text/css'>  
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>  
+<body>  
+<!-- // authorize // -->
+	<div class="overlay"></div>
+	<div class="autorize-popup">
+		<div class="autorize-tabs">
+			<a href="#" class="autorize-tab-a current">Sign in</a>
+			<a href="#" class="autorize-tab-b">Register</a>
+			<a href="#" class="autorize-close"></a>
+			<div class="clear"></div>
+		</div>
+		<section class="autorize-tab-content">
+			<div class="autorize-padding">
+				<h6 class="autorize-lbl">Welocome! Login in to Your Accont</h6>
+				<input type="text" value="" placeholder="Name">
+				<input type="text" value="" placeholder="Password">
+				<footer class="autorize-bottom">
+					<button class="authorize-btn">Login</button>
+					<a href="#" class="authorize-forget-pass">Forgot your password?</a>
+					<div class="clear"></div>
+				</footer>
+			</div>
+		</section>
+		<section class="autorize-tab-content">
+			<div class="autorize-padding">
+				<h6 class="autorize-lbl">Register for Your Account</h6>
+				<input type="text" value="" placeholder="Name">
+				<input type="text" value="" placeholder="Password">
+				<footer class="autorize-bottom">
+					<button class="authorize-btn">Registration</button>
+					<div class="clear"></div>
+				</footer>
+			</div>
+		</section>
+	</div>
+<!-- \\ authorize \\-->
+
+<header id="top">
+	<div class="header-a">
+		<div class="wrapper-padding">
+			<div class="header-phone"><span>1 - 555 - 555 - 555</span></div>
+			<div class="header-account">
+				<a href="#">My account</a>
+			</div>
+			<div class="header-social">
+				<a href="twitter.com" class="social-twitter"></a>
+				<a href="facebook.com" class="social-facebook"></a>
+				<a href="vimeo.com" class="social-vimeo"></a>
+				<a href="pinterest.com" class="social-pinterest"></a>
+				<a href="instagram.com" class="social-instagram"></a>
+			</div>
+			<div class="header-viewed">
+				<a href="#" class="header-viewed-btn">recently viewed</a>
+				<!-- // viewed drop // -->
+				<div class="viewed-drop">
+					<div class="viewed-drop-a">
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-01.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Hotel Bright Land</a></div>
+								<div class="viewed-item-cat">location: Shimla,HP</div>
+								<div class="viewed-price">Rs.3000/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-02.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Ermin's Adventure Tour</a></div>
+								<div class="viewed-item-cat">location: dubai</div>
+								<div class="viewed-price">Rs.11000/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-03.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Hotel Himgiri</a></div>
+								<div class="viewed-item-cat">location: Shimla,HP</div>
+								<div class="viewed-price">Rs.2600/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+					</div>
+				</div>
+				<!-- \\ viewed drop \\ -->
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="header-b">
+		<!-- // mobile menu // -->
+		<div class="mobile-menu">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="index.html?hotelTab">Hotels</a>
+					</li>
+					<li><a href="index.html?holidayTab">Holidays</a></li>
+					<li><a href="index.html?flightTab">Flights</a>
+					</li>
+					<li><a href="index.html?activityTab">Tour & Activities</a>
+					</li>
+					<li><a href="hotel_list.html">Compare</a>
+						<span class="compare-badge">0</span>
+					</li>
+					<li><a href="about_us.html">About</a>
+					</li>
+					<li><a href="contacts.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- \\ mobile menu \\ -->
+
+		<div class="wrapper-padding">
+			<div class="header-logo"><a href="index.html"><img alt="" src="img/logo.png" /></a>
+				<h1 class="header-logo-text">break eazy</h1>
+			</div>
+			<div class="header-right">
+				<div class="hdr-srch">
+					<a href="#" class="hdr-srch-btn"></a>
+				</div>
+				<div class="hdr-srch-overlay">
+					<div class="hdr-srch-overlay-a">
+						<input type="text" value="" placeholder="what are you looking for ?...">
+						<a href="#" class="srch-close"></a>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="hdr-srch-devider"></div>
+				<a href="#" class="menu-btn"></a>
+				<nav class="header-nav">
+					<ul>
+						<li><a href="index.html">Home</a>
+						</li>
+						<li><a href="index.html?hotelTab">Hotels</a>
+						</li>
+						<li><a href="index.html?holidayTab">Holidays</a>
+						</li>
+						<li><a href="index.html?flightTab">Flights</a>
+						</li>
+						<li><a href="index.html?activityTab">Tour & Activities</a></li>
+						<li><a href="compare.html">Compare</a>
+							<span class="compare-badge">0</span>
+						</li>
+						</li>
+						<li><a href="about_us.html">About</a>
+						</li>
+						<li><a href="contacts.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</header>
+
+
+<!-- main-cont -->
+<div class="main-cont">
+  <div class="body-wrapper">
+    <div class="wrapper-padding">
+    <div class="page-head">
+      <div class="page-title">HOLIDAYS - <span>International, 11 March 2016</span></div>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>  /<a href="index.html/holidayTab">Holidays</a> / <span>Search results</span>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="two-colls">
+      <div class="two-colls-left">
+        
+        <div class="srch-results-lbl fly-in">
+          <span>2,000 results found.</span>
+        </div> 
+	       
+        <div class="side-block fly-in">
+          <div class="side-block-search">
+            <div class="page-search-p">
+						<!-- // -->
+						<div class="srch-tab-line">
+							<div class="srch-tab-left">
+								<label>country</label>
+								<div class="input-a"><input type="text" value="" placeholder="example: france"></div>	
+							</div>
+							<div class="srch-tab-right">
+								<label>city</label>
+								<div class="input-a"><input type="text" value="" placeholder="Vienna"></div>	
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+
+						<!-- // -->
+						<div class="srch-tab-line">
+							<div class="srch-tab-left">
+								<label>Departure</label>
+								<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>	
+							</div>
+							<div class="srch-tab-right">
+								<label>Return</label>
+								<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>	
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+						<div class="srch-tab-line no-margin-bottom">
+							<div class="srch-tab-left transformed">
+								<label>Hotel stars</label>
+								<div class="select-wrapper">
+								<select class="custom-select">
+									<option>--</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+								</div>	
+							</div>
+							<div class="srch-tab-right transformed">
+								<label>peoples</label>
+								<div class="select-wrapper">
+								<select class="custom-select">
+									<option>--</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+								</div>	
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->	
+
+              <button class="srch-btn">Search</button> 
+    					</div>  
+                   
+          </div>          
+        </div>
+
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-price">
+            <div class="side-padding">
+              <div class="side-lbl">Price</div>
+              <div class="price-ranger">
+                <div id="slider-range"></div>              
+              </div>
+              <div class="price-ammounts">
+                <input type="text" id="ammount-from" readonly>
+                <input type="text" id="ammount-to" readonly>
+                <div class="clear"></div>
+              </div>              
+            </div>
+          </div>  
+        </div>
+        <!-- \\ side \\ -->
+
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-stars">
+            <div class="side-padding">
+              <div class="side-lbl">Holiday duration</div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  2 - 4 Days
+                </label>
+              </div> 
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  2-5 Days
+                </label>
+              </div> 
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  6 - 9 Days
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  10+ Days
+                </label>
+              </div>          
+            </div>
+          </div>  
+        </div>
+        <!-- \\ side \\ -->
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-stars">
+            <div class="side-padding">
+              <div class="side-lbl">Holiday type</div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Bus tour
+                </label>
+              </div> 
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  avia
+                </label>
+              </div> 
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Bus = avia
+                </label>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- \\ side \\ -->
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-stars">
+            <div class="side-padding">
+              <div class="side-lbl">continent</div>  
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Europe
+                </label>
+              </div> 
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  asia
+                </label>
+              </div> 
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  north america
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  south america
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  africa
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  australia
+                </label>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- \\ side \\ -->
+
+        
+      </div>
+      <div class="two-colls-right">
+        <div class="two-colls-right-b">
+          <div class="padding">
+
+			  <div class="catalog-head large fly-in">
+				  <label>Sorting results by:</label>
+				  <div class="search-select">
+					  <select>
+						  <option>Name</option>
+						  <option>A to Z</option>
+						  <option>Z to A</option>
+
+					  </select>
+				  </div>
+				  <div class="search-select">
+					  <select>
+						  <option>Price</option>
+						  <option>High to Low</option>
+						  <option>Low to high</option>
+					  </select>
+				  </div>
+				  <div class="search-select">
+					  <select>
+						  <option>Rating</option>
+						  <option>1</option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+					  </select>
+				  </div>
+				  <div class="search-select">
+					  <select>
+						  <option>Popularity</option>
+						  <option>Most Popular</option>
+						  <option>Less Popular</option>
+						  <option>Least Popular</option>
+					  </select>
+				  </div>
+
+				  <div class="clear"></div>
+			  </div>
+
+			  <div class="catalog-row list-rows">
+
+				  <!-- // -->
+
+				  <div class="cat-list-item fly-in">
+					  <div class="cat-list-item-l">
+						  <a href="holiday_detail.html" target="_blank"><img alt="" src="img/tour-01.jpg"></a>
+					  </div>
+					  <div class="cat-list-item-r">
+						  <div class="cat-list-item-rb">
+							  <div class="cat-list-item-p">
+								  <div class="cat-list-content">
+									  <div class="cat-list-content-a">
+										  <div class="cat-list-content-l">
+											  <div class="cat-list-content-lb">
+												  <div class="cat-list-content-lpadding">
+													  <div class="offer-slider-link"><a target="_blank" href="holiday_detail.html">India - france Amazing Holiday</a>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-date">11 March 2016</div>
+													  <div class="custom-divider"></div>
+													  <div><span href="#">Hotel Saint Malo</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-footer">
+														  <div class="tour-i-holder">
+															  <div class="tour-item-icons">
+																  <img alt="" src="img/tour-icon-01.png">
+																  <span class="tour-item-plus"><img alt="" src="img/tour-icon.png"></span>
+																  <img alt="" src="img/tour-icon-02.png">
+															  </div>
+															  <div class="tour-icon-txt">Air + bus</div>
+															  <div class="clear"></div>
+														  </div>
+														  <div class="tour-duration">Lufthansa + Volvo</div>
+														  <div class="clear"></div>
+													  </div>
+													  <div>
+
+
+														  <div class="alt-devider"></div>
+
+														  <div class="badge-fav">
+															  <span>+ Add To Fav</span>
+														  </div>
+														  <div class="badge-compare">
+
+															  <span>+ Add to Compare</span>
+														  </div>
+														  <div class="clear"></div>
+													  </div>
+
+													  <div class="cat-icons">
+														  <div class="clear"></div>
+													  </div>
+												  </div>
+											  </div>
+											  <br class="clear">
+										  </div>
+									  </div>
+									  <div class="cat-list-content-r">
+										  <div class="cat-list-content-p">
+
+											  <div class="mg-bt27"><a href="http://makemytrip.com" target="_blank"><img alt="" src="img/mmt.png"></a></div>
+											  <div class="offer-slider-r">
+												  <b>Rs.31,000/-</b>
+												  <span>HOLIDAY PRICE</span>
+											  </div>
+											  <a href="http://makemytrip.com" target="_blank" class="cat-list-btn">Book</a>
+										  </div>
+									  </div>
+									  <div class="clear"></div>
+								  </div>
+							  </div>
+						  </div>
+						  <br class="clear">
+					  </div>
+					  <div class="clear"></div>
+				  </div><!-- \\ -->
+				  <!-- // -->
+
+				  <!-- \\ -->
+				  <!-- // -->
+				  <div class="cat-list-item fly-in">
+					  <div class="cat-list-item-l">
+						  <a href="#"><img alt="" src="img/tour-02.jpg"></a>
+					  </div>
+					  <div class="cat-list-item-r">
+						  <div class="cat-list-item-rb">
+							  <div class="cat-list-item-p">
+								  <div class="cat-list-content">
+									  <div class="cat-list-content-a">
+										  <div class="cat-list-content-l">
+											  <div class="cat-list-content-lb">
+												  <div class="cat-list-content-lpadding">
+													  <div class="offer-slider-link"><a href="#">India - ITALY Holiday</a>
+														  <span class="discount-tag">10% off</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+
+													  <div class="tour-item-date">11 March 20166</div>
+													  <div class="custom-divider"></div>
+													  <div><span href="#">Hotel Saint Diago</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-footer">
+														  <div class="tour-i-holder">
+															  <div class="tour-item-icons">
+																  <img alt="" src="img/tour-icon-01.png">
+															  </div>
+															  <div class="tour-icon-txt">Air</div>
+															  <div class="clear"></div>
+														  </div>
+														  <div class="tour-duration">Kingfisher Airlines</div>
+														  <div class="clear"></div>
+													  </div>
+													  <div>
+
+
+														  <div class="alt-devider"></div>
+
+														  <div class="badge-fav">
+															  <span>+ Add To Fav</span>
+														  </div>
+														  <div class="badge-compare">
+
+															  <span>+ Add to Compare</span>
+														  </div>
+														  <div class="clear"></div>
+													  </div>
+
+													  <div class="cat-icons">
+														  <div class="clear"></div>
+													  </div>
+												  </div>
+											  </div>
+											  <br class="clear">
+										  </div>
+									  </div>
+									  <div class="cat-list-content-r">
+										  <div class="cat-list-content-p">
+
+											  <div class="mg-bt27">
+												  <a href="http://hotels.com" target="_blank"><img alt="" src="img/Hotels.png"></a>
+											  </div>
+
+											  <div class="offer-slider-r">
+
+												  <b class="discount-price">Rs.33,000/-</b>
+												  <b>Rs.29,700/-</b>
+												  <span>HOLIDAY PRICE</span>
+											  </div>
+											  <a href="http://hotels.com" target="_blank" class="cat-list-btn">book</a>
+										  </div>
+									  </div>
+									  <div class="clear"></div>
+								  </div>
+							  </div>
+						  </div>
+						  <br class="clear">
+					  </div>
+					  <div class="clear"></div>
+				  </div>
+				  <!-- \\ -->
+				  <!-- // -->
+
+				  <div class="cat-list-item fly-in">
+					  <div class="cat-list-item-l">
+						  <a href="#"><img alt="" src="img/tour-03.jpg"></a>
+					  </div>
+					  <div class="cat-list-item-r">
+						  <div class="cat-list-item-rb">
+							  <div class="cat-list-item-p">
+								  <div class="cat-list-content">
+									  <div class="cat-list-content-a">
+										  <div class="cat-list-content-l">
+											  <div class="cat-list-content-lb">
+												  <div class="cat-list-content-lpadding">
+													  <div class="offer-slider-link"><a href="#">India - OLD EUROPE Holiday</a>
+														  <span class="discount-tag">20% off</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+
+													  </div>
+													  <div class="tour-item-date">11 FEB 2016 - 22 FEB 2016</div>
+													  <div class="custom-divider"></div>
+													  <div><span href="#">Hotel Salt Lake</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-footer">
+														  <div class="tour-i-holder">
+															  <div class="tour-item-icons">
+																  <img alt="" src="img/tour-icon-02.png">
+															  </div>
+															  <div class="tour-icon-txt">Bus</div>
+															  <div class="clear"></div>
+														  </div>
+														  <div class="tour-duration">Britain Bus Services</div>
+														  <div class="clear"></div>
+													  </div>
+													  <div>
+
+
+														  <div class="alt-devider"></div>
+														  <div class="flight-line-b">
+															  <b class="">view prices</b>
+															  <span>from 4 websites</span>
+														  </div>
+														  <div class="badge-fav">
+															  <span>+ Add To Fav</span>
+														  </div>
+														  <div class="badge-compare">
+
+															  <span>+ Add to Compare</span>
+														  </div>
+														  <div class="clear"></div>
+													  </div>
+
+													  <div class="cat-icons">
+														  <div class="clear"></div>
+													  </div>
+												  </div>
+											  </div>
+											  <br class="clear">
+										  </div>
+									  </div>
+									  <div class="cat-list-content-r">
+										  <div class="cat-list-content-p">
+
+											  <div class="mg-bt27">
+												  <a href="http://travelguru.com" target="_blank"><img alt="" src="img/travelGuru.png"></a>
+											  </div>
+											  <div class="offer-slider-r">
+												  <b class="discount-price">Rs.30,000/-</b>
+												  <b>Rs.24,000/-</b>
+												  <span>HOLIDAY PRICE</span>
+											  </div>
+											  <a href="http://travelguru.com" target="_blank" class="cat-list-btn">book</a>
+										  </div>
+									  </div>
+									  <div class="clear"></div>
+								  </div>
+
+							  </div>
+						  </div>
+						  <br class="clear">
+					  </div>
+					  <div class="clear"></div>
+					  <div class="alt-details align-columns">
+						  <div class="alt-offer">
+							  <div class="alt-details-i">
+								  <a href="http://makemytrip.com" target="_blank"><img alt="" src="img/mmt.png"></a>
+							  </div>
+							  <div class="alt-details-i">
+								  <nav class="stars">
+									  <ul>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+									  </ul>
+									  <div class="clear"></div>
+								  </nav>
+							  </div>
+							  <div class="alt-details-i">
+								  <a class="offer-btn" href="javascript:void(0)" data-toggle="popover" data-html="true" ,="" data-placement="top" data-content="<ul class='offer-popover'>
+								   <li>20% off using HDFC Credit Card</li>
+								   <li>10% off using Axis Bank Debit Card</li>
+								   <li>Pay with Paytm Get 12% Cash Back</li>
+								   </ul>" title="" data-original-title="">Offers</a>
+							  </div>
+							  <div class="alt-details-i">
+								  <div class="offer-slider-r">
+									  <b>Rs.25,000/-</b>
+									  <span>HOLIDAY PRICE</span>
+								  </div>
+							  </div>
+							  <a href="#" class="cat-list-btn">Book</a>
+							  <div class="clear"></div>
+						  </div>
+						  <div class="alt-offer">
+							  <div class="alt-details-i">
+								  <a href="http://hoteling.com" target="_blank"><img alt="" src="img/Hoteling.png"></a>
+							  </div>
+							  <div class="alt-details-i">
+								  <nav class="stars">
+									  <ul>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+									  </ul>
+									  <div class="clear"></div>
+								  </nav>
+							  </div>
+							  <div class="alt-details-i">
+								<span>
+									No Offers
+								</span>
+							  </div>
+							  <div class="alt-details-i">
+								  <div class="offer-slider-r">
+									  <b>Rs.26,000/-</b>
+									  <span>HOLIDAY PRICE</span>
+								  </div>
+							  </div>
+							  <a href="#" class="cat-list-btn">Book</a>
+							  <div class="clear"></div>
+						  </div>
+						  <div class="alt-offer">
+							  <div class="alt-details-i">
+								  <a href="http://hotels.com" target="_blank"><img alt="" src="img/Hotels.png"></a>
+							  </div>
+							  <div class="alt-details-i">
+								  <nav class="stars">
+									  <ul>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+									  </ul>
+									  <div class="clear"></div>
+								  </nav>
+							  </div>
+							  <div class="alt-details-i">
+								<span>
+									No Offers
+								</span>
+							  </div>
+							  <div class="alt-details-i">
+								  <div class="offer-slider-r">
+									  <b>Rs.26,500/-</b>
+									  <span>HOLIDAY PRICE</span>
+								  </div>
+							  </div>
+							  <a href="#" class="cat-list-btn">Book</a>
+							  <div class="clear"></div>
+						  </div>
+						  <div class="alt-offer">
+							  <div class="alt-details-i">
+								  <a href="http://booking.com" target="_blank"><img alt="" src="img/booking.png"></a>
+							  </div>
+							  <div class="alt-details-i">
+								  <nav class="stars">
+									  <ul>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+									  </ul>
+									  <div class="clear"></div>
+								  </nav>
+							  </div>
+							  <div class="alt-details-i">
+								  <a class="offer-btn" href="javascript:void(0)" data-toggle="popover" data-html="true" ,="" data-placement="top" data-content="<ul class='offer-popover'>
+								   <li>20% off using HDFC Credit Card</li>
+								   <li>10% off using Axis Bank Debit Card</li>
+								   <li>Pay with Paytm Get 12% Cash Back</li>
+								   </ul>" title="" data-original-title="">Offers</a>
+							  </div>
+							  <div class="alt-details-i">
+								  <div class="offer-slider-r">
+									  <b>Rs.28,000/-</b>
+									  <span>HOLIDAY PRICE</span>
+								  </div>
+							  </div>
+							  <a href="#" class="cat-list-btn">Book</a>
+							  <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+					  </div>
+				  </div><!-- \\ -->
+				  <!-- // -->
+				  <div class="cat-list-item fly-in">
+					  <div class="cat-list-item-l">
+						  <a href="#"><img alt="" src="img/tour-04.jpg"></a>
+					  </div>
+					  <div class="cat-list-item-r">
+						  <div class="cat-list-item-rb">
+							  <div class="cat-list-item-p">
+								  <div class="cat-list-content">
+									  <div class="cat-list-content-a">
+										  <div class="cat-list-content-l">
+											  <div class="cat-list-content-lb">
+												  <div class="cat-list-content-lpadding">
+													  <div class="offer-slider-link"><a href="#">India - BARCELONA Holiday</a>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-date">11 MARCH 2016</div>
+													  <div class="custom-divider"></div>
+													  <div><span href="#">Hotel Beach View</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-footer">
+														  <div class="tour-i-holder">
+															  <div class="tour-item-icons">
+																  <img alt="" src="img/tour-icon-01.png">
+																  <span class="tour-item-plus"><img alt="" src="img/tour-icon.png"></span>
+																  <img alt="" src="img/tour-icon-02.png">
+															  </div>
+															  <div class="tour-icon-txt">Air + bus</div>
+															  <div class="clear"></div>
+														  </div>
+														  <div class="tour-duration">Jet Airways + Chandra Travels</div>
+														  <div class="clear"></div>
+													  </div>
+													  <div>
+
+
+														  <div class="alt-devider"></div>
+
+														  <div class="badge-fav">
+															  <span>+ Add To Fav</span>
+														  </div>
+														  <div class="badge-compare">
+
+															  <span>+ Add to Compare</span>
+														  </div>
+														  <div class="clear"></div>
+													  </div>
+
+													  <div class="cat-icons">
+														  <div class="clear"></div>
+													  </div>
+												  </div>
+											  </div>
+											  <br class="clear">
+										  </div>
+									  </div>
+									  <div class="cat-list-content-r">
+										  <div class="cat-list-content-p">
+
+											  <div class="mg-bt27">
+												  <a href="http://travelguru.com" target="_blank"><img alt="" src="img/travelGuru.png"></a>
+											  </div>
+											  <div class="offer-slider-r">
+												  <b>Rs.33,000/-</b>
+												  <span>HOLIDAY PRICE</span>
+											  </div>
+											  <a  href="http://travelguru.com" target="_blank" class="cat-list-btn">Book</a>
+										  </div>
+									  </div>
+									  <div class="clear"></div>
+								  </div>
+							  </div>
+						  </div>
+						  <br class="clear">
+					  </div>
+					  <div class="clear"></div>
+				  </div>
+				  <!-- \\ -->
+				  <div class="cat-list-item fly-in">
+					  <div class="cat-list-item-l">
+						  <a href="#"><img alt="" src="img/tour-05-g.jpg"></a>
+					  </div>
+					  <div class="cat-list-item-r">
+						  <div class="cat-list-item-rb">
+							  <div class="cat-list-item-p">
+								  <div class="cat-list-content">
+									  <div class="cat-list-content-a">
+										  <div class="cat-list-content-l">
+											  <div class="cat-list-content-lb">
+												  <div class="cat-list-content-lpadding">
+													  <div class="offer-slider-link"><a href="#">India - Canada Premium Holiday</a>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-date">11 MARCH 2016</div>
+													  <div class="custom-divider"></div>
+													  <div><span href="#">Hotel Beach View</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-footer">
+														  <div class="tour-i-holder">
+															  <div class="tour-item-icons">
+																  <img alt="" src="img/tour-icon-01.png">
+																  <span class="tour-item-plus"><img alt="" src="img/tour-icon.png"></span>
+																  <img alt="" src="img/tour-icon-02.png">
+															  </div>
+															  <div class="tour-icon-txt">Air + bus</div>
+															  <div class="clear"></div>
+														  </div>
+														  <div class="tour-duration">Lufthansa + Volvo</div>
+														  <div class="clear"></div>
+													  </div>
+
+													  <div>
+
+
+														  <div class="alt-devider"></div>
+														  <div class="flight-line-b">
+															  <b class="">view prices</b>
+															  <span>from 2 websites</span>
+														  </div>
+														  <div class="badge-fav">
+															  <span>+ Add To Fav</span>
+														  </div>
+														  <div class="badge-compare">
+
+															  <span>+ Add to Compare</span>
+														  </div>
+														  <div class="clear"></div>
+													  </div>
+
+													  <div class="cat-icons">
+														  <div class="clear"></div>
+													  </div>
+												  </div>
+											  </div>
+											  <br class="clear">
+										  </div>
+									  </div>
+									  <div class="cat-list-content-r">
+										  <div class="cat-list-content-p">
+
+											  <div class="mg-bt27">
+												  <a href="https://yatra.com" target="_blank"><img alt="" src="img/yatra.png"></a>
+											  </div>
+											  <div class="offer-slider-r">
+												  <b>Rs.27,000/-</b>
+												  <span>HOLIDAY PRICE</span>
+											  </div>
+											  <a  href="https://yatra.com" target="_blank" class="cat-list-btn">Book</a>
+										  </div>
+									  </div>
+									  <div class="clear"></div>
+								  </div>
+							  </div>
+						  </div>
+						  <br class="clear">
+					  </div>
+					  <div class="alt-details align-columns">
+						  <div class="alt-offer">
+							  <div class="alt-details-i">
+								  <a href="http://hotels.com" target="_blank"><img alt="" src="img/Hotels.png"></a>
+							  </div>
+							  <div class="alt-details-i">
+								  <nav class="stars">
+									  <ul>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+									  </ul>
+									  <div class="clear"></div>
+								  </nav>
+							  </div>
+							  <div class="alt-details-i">
+								<span>
+									No Offers
+								</span>
+							  </div>
+							  <div class="alt-details-i">
+								  <div class="offer-slider-r">
+									  <b>Rs.28,500/-</b>
+									  <span>HOLIDAY PRICE</span>
+								  </div>
+							  </div>
+							  <a href="#" class="cat-list-btn">Book</a>
+							  <div class="clear"></div>
+						  </div>
+						  <div class="alt-offer">
+							  <div class="alt-details-i">
+								  <a href="http://booking.com" target="_blank"><img alt="" src="img/booking.png"></a>
+							  </div>
+							  <div class="alt-details-i">
+								  <nav class="stars">
+									  <ul>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+									  </ul>
+									  <div class="clear"></div>
+								  </nav>
+							  </div>
+							  <div class="alt-details-i">
+								<span>
+									No Offers
+								</span>
+							  </div>
+							  <div class="alt-details-i">
+								  <div class="offer-slider-r">
+									  <b>Rs.31,000/-</b>
+									  <span>HOLIDAY PRICE</span>
+								  </div>
+							  </div>
+							  <a href="#" class="cat-list-btn">Book</a>
+							  <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+					  </div>
+					  <div class="clear"></div>
+				  </div><!-- // -->
+				  <div class="cat-list-item fly-in">
+					  <div class="cat-list-item-l">
+						  <a href="#"><img alt="" src="img/tour-06-g.jpg"></a>
+					  </div>
+					  <div class="cat-list-item-r">
+						  <div class="cat-list-item-rb">
+							  <div class="cat-list-item-p">
+								  <div class="cat-list-content">
+									  <div class="cat-list-content-a">
+										  <div class="cat-list-content-l">
+											  <div class="cat-list-content-lb">
+												  <div class="cat-list-content-lpadding">
+													  <div class="offer-slider-link"><a href="#">India - MOROCCO Fun HOLIDAY</a>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav></div>
+													  <div class="tour-item-date">11 MARCH 2015</div>
+													  <div class="custom-divider"></div>
+													  <div><span href="#">Hotel Sea View</span>
+														  <nav class="stars">
+															  <ul>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+																  <li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+															  </ul>
+															  <div class="clear"></div>
+														  </nav>
+													  </div>
+													  <div class="tour-item-footer">
+														  <div class="tour-i-holder">
+															  <div class="tour-item-icons">
+																  <img alt="" src="img/tour-icon-01.png">
+															  </div>
+															  <div class="tour-icon-txt">Air</div>
+															  <div class="clear"></div>
+														  </div>
+														  <div class="tour-duration">Lufthansa</div>
+														  <div class="clear"></div>
+													  </div>
+													  <div>
+
+
+														  <div class="alt-devider"></div>
+
+														  <div class="badge-fav">
+															  <span>+ Add To Fav</span>
+														  </div>
+														  <div class="badge-compare">
+
+															  <span>+ Add to Compare</span>
+														  </div>
+														  <div class="clear"></div>
+													  </div>
+
+													  <div class="cat-icons">
+														  <div class="clear"></div>
+													  </div>
+												  </div>
+											  </div>
+											  <br class="clear">
+										  </div>
+									  </div>
+									  <div class="cat-list-content-r">
+										  <div class="cat-list-content-p">
+
+											  <div class="mg-bt27">
+												  <a href="http://makemytrip.com" target="_blank"><img alt="" src="img/mmt.png"></a>
+											  </div>
+											  <div class="offer-slider-r">
+												  <b>Rs.35,000/-</b>
+												  <span>HOLIDAY PRICE</span>
+											  </div>
+											  <a href="http://makemytrip.com" target="_blank" class="cat-list-btn">Book</a>
+										  </div>
+									  </div>
+									  <div class="clear"></div>
+								  </div>
+							  </div>
+						  </div>
+						  <br class="clear">
+					  </div>
+					  <div class="clear"></div>
+				  </div>
+				  <!-- \\ -->
+
+
+			  </div>
+            
+            <div class="clear"></div>
+            
+            <div class="pagination">
+              <a class="active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <div class="clear"></div>
+            </div>            
+          </div>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+    </div>	
+  </div>  
+</div>
+<!-- /main-cont -->
+
+<footer class="footer-a">
+	<div class="wrapper-padding">
+		<div class="section">
+			<div class="footer-lbl">Get In Touch</div>
+			<div class="footer-adress">Address: 110058 Tilak nagar,<br />New Delhi, India</div>
+			<div class="footer-phones">Telephones: +911 8588850082</div>
+			<div class="footer-email">E-mail: sebi_1.1@hotmail.com</div>
+			<div class="footer-skype">Skype: vasu.nagpal</div>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Featured deals</div>
+			<div class="footer-tours">
+				<!-- // -->
+				<div class="footer-tour">
+					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-01.jpg" /></a></div>
+					<div class="footer-tour-r">
+						<div class="footer-tour-a">amsterdam Tour & Activities</div>
+						<div class="footer-tour-b">location: netherlands</div>
+						<div class="footer-tour-c">Rs.41,000/-</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- \\ -->
+				<!-- // -->
+				<div class="footer-tour">
+					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-02.jpg" /></a></div>
+					<div class="footer-tour-r">
+						<div class="footer-tour-a">Kiev Tour & Activities</div>
+						<div class="footer-tour-b">location: ukraine</div>
+						<div class="footer-tour-c">61,000/-</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- \\ -->
+				<!-- // -->
+				<div class="footer-tour">
+					<div class="footer-tour-l"><a href="#"><img alt="" src="img/f-tour-03.jpg" /></a></div>
+					<div class="footer-tour-r">
+						<div class="footer-tour-a">vienna Tour & Activities</div>
+						<div class="footer-tour-b">location: austria</div>
+						<div class="footer-tour-c">Rs.90,000/-</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- \\ -->
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="footer-lbl">newsletter sign up</div>
+			<div class="footer-subscribe">
+				<div class="footer-subscribe-a">
+					<input type="text" placeholder="you email" value="" />
+				</div>
+			</div>
+			<button class="footer-subscribe-btn">Sign up</button>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="modal fade custom-modal" id="fav-dialog-add" tabindex="-1" role="dialog" aria-labelledby="fav-add-head">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="fav-add-head">Favourites List Message</h4>
+				</div>
+				<div class="modal-body">
+					Item Added to Favourites List
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade custom-modal" id="fav-dialog-remove" tabindex="-1" role="dialog" aria-labelledby="fav-rem-head">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="fav-rem-head">Favourites List Message</h4>
+				</div>
+				<div class="modal-body">
+					Item Removed to From Favourites List
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade custom-modal" id="compare-dialog-add" tabindex="-1" role="dialog" aria-labelledby="compare-add-head">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="compare-add-head">Compare List Message</h4>
+				</div>
+				<div class="modal-body">
+					Item Added to Compare List
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade custom-modal" id="compare-dialog-remove" tabindex="-1" role="dialog" aria-labelledby="compare-rem-head">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="compare-rem-head">Compare List Message</h4>
+				</div>
+				<div class="modal-body">
+					Item Removed to From Compare List
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<footer class="footer-b">
+	<div class="wrapper-padding">
+		<div class="footer-left">© Copyright 2015 by breakeazy. All rights reserved.</div>
+		<div class="footer-social">
+			<a href="twitter.com" class="footer-twitter"></a>
+			<a href="facebook.com" class="footer-facebook"></a>
+			<a href="vimeo.com" class="footer-vimeo"></a>
+			<a href="pinterest.com" class="footer-pinterest"></a>
+			<a href="instagram.com" class="footer-instagram"></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</footer>
+
+<!-- // scripts // -->
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/jqeury.appear.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
+  <script src="js/custom.select.js"></script>
+	<script src="js/jquery.ui.js"></script>
+<script  src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+
+  <script>
+
+  	$(document).ready(function(){
+  	  $('.date-inpt').datepicker();
+      $('.custom-select').customSelect();
+      (function($) {
+        $(function() {
+          $('input:checkbox,input:radio,.search-engine-range-selection-container input:radio').styler();
+        })
+      })(jQuery);   
+      $(function() {
+        $( "#slider-range" ).slider({
+          range: true,
+          min: 0,
+          max: 1500,
+          values: [ 275, 1100 ],
+          slide: function( event, ui ) {
+            $("#ammount-from").val(ui.values[0]+'$');
+            $("#ammount-to").val(ui.values[1]+'$');
+          }
+        });
+        $("#ammount-from").val($("#slider-range").slider("values",0)+'$');
+        $("#ammount-to").val($("#slider-range").slider("values",1)+'$');
+      });
+      
+      
+     
+        $(".side-time").each(function(){
+          var $this = $(this);
+          $this.find('.time-range').slider({
+              range: true,
+              min: 0,
+              max: 24,
+              values: [ 3, 20 ],
+              slide: function( event, ui ) {
+                $this.find(".time-from").text(ui.values[0]);
+                $this.find(".time-to").text(ui.values[1]);
+              }
+          });
+          
+          $(this).find(".time-from").text($this.find(".time-range").slider("values",0));
+          $(this).find(".time-to").text($this.find(".time-range").slider("values",1));
+                
+        });
+
+  		$(function() {
+    			$(document.body).on('appear', '.fly-in', function(e, $affected) {
+      			$(this).addClass("appeared");
+    			});
+    			$('.fly-in').appear({force_process: true});
+  		});
+  	});
+  </script>
+<!-- \\ scripts \\ --> 
+ 
+</body>  
+
+<!-- /tour_alternative.html  [XR&CO'2014], Mon, 22 Feb 2016 10:45:17 GMT -->
+</html> 
