@@ -217,6 +217,7 @@ input,select,button,textarea {outline:none;}
 	overflow: auto;
 	margin-top: 20px;
 	border:1px solid #E6E6E6;
+	background-color: white;
 
 }
 .compare-column{
@@ -357,8 +358,13 @@ input,select,button,textarea {outline:none;}
 .offer-popover{padding-left: 10px}
 .offer-popover li{
 	padding-bottom: 4px;
-	font-size: 13px;
+	font-size: 11px;
 	color:grey;
+}
+.flight-stats{
+	color: #103360 !important;
+	font-size: 12px;
+	font-weight:bold;
 }
 .alt-details.align-columns{
 	width:100%;
@@ -844,7 +850,9 @@ button.srch-btn {cursor: pointer; font-family: 'Montserrat'; font-size:11px; fon
 .cat-list-content-lb {width:100%; float:left; overflow:hidden;}
 .cat-list-content-lpadding {padding: 18px 30px 7px 0px; min-height: 156px;  border-right: 1px solid #ede7e1 ;}
 .cat-list-content-r {width:124px;  float:left; overflow:hidden; margin:0 0 0 -125px;}
-.cat-list-content-p {padding:17px 0px 17px 18px; }
+.cat-list-content-p {padding:17px 0px 17px 18px; position:relative;    min-height: 216px;
+	position: relative;}
+.cat-list-btn.holiday-book{position: absolute;bottom:15px;}
 .cat-list-item .offer-slider-link {font-family: 'Raleway'; color:#252525; margin-bottom:8px;}
 .cat-list-item .offer-slider-location {font-size: 10px; line-height: 15px; margin-bottom:0px;  font-family: 'Raleway'; font-weight: 500; text-transform: uppercase;}
 .cat-list-content-l p {font-size: 13px; line-height: 21px; margin: 13px 0px 14px 0px; color:#455051; font-family: 'Raleway';}
@@ -860,18 +868,28 @@ button.srch-btn {cursor: pointer; font-family: 'Montserrat'; font-size:11px; fon
 .cat-list-item .offer-slider-r {float: none; margin-bottom: 18px; font-family: 'Raleway';
 	min-height: 50px;}
 .cat-list-item .stars {margin-bottom: 7px;}
-.cat-list-btn {display: inline-block; font-family: 'Montserrat'; font-weight:normal; background: #fff; padding:9px 15px 9px 15px; border-radius: 3px; border:1px solid #e5e5e5; text-decoration: none; color:#838383; font-size: 10px; text-transform: uppercase;}
-.cat-list-btn:hover {color:#ff7200;}                                             
+.cat-list-btn {display: inline-block; font-family: 'Montserrat'; font-weight:normal; background: #8BC34A; padding:9px 15px 9px 15px; border-radius: 3px; border:1px solid #e5e5e5; text-decoration: none; color:#ffffff; font-size: 10px; text-transform: uppercase;}
+.cat-list-btn:hover {color:#ffffff;}
 .cat-list-item .cat-list-btn {padding-left:26px; padding-right:26px;}
 .cat-list-content-l .offer-slider-link {margin-bottom:8px;}
 .cat-list-item-rb  .offer-slider-r b {font-weight:500 !important; margin-bottom:7px;}                                              
 .cat-list-item-rb .offer-slider-r span {font-size:10px;}
-.cat-list-item-rb .cat-list-btn {background:transparent; border:1px solid #e5e5e5; border-radius:3px; font-size:10px; padding-bottom:9px; padding-top:9px; font-family:'Montserrat'; color:#838383; font-weight:normal; }
-.cat-list-item-rb .cat-list-btn:hover {color:#ff7200;}
+.cat-list-item-rb .cat-list-btn {background:#8BC34A; border:1px solid #e5e5e5; border-radius:3px; font-size:10px; padding-bottom:9px; padding-top:9px; font-family:'Montserrat'; color:#FFFFFF; font-weight:normal;
+	position: absolute;
+	bottom: 12px;}
+.cat-list-item-rb .cat-list-btn:hover {color:#ffffff;}
 .cat-list-item-rb .offer-slider-link a {font-size:13px;}
 .offer-slider-txt {
 	padding:20px 13px 21px 13px;
 	background:#fff;
+}
+.review-form label{
+	font-weight:bold;
+}
+.feedback{
+	width: 70%;
+	height: 259px;
+	margin-bottom: 30px;
 }
 .offer-slider-img {
 	text-decoration:none;

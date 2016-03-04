@@ -62,7 +62,9 @@ $(document).ready(function(){
 	})();
 
 
-	$("[data-toggle=popover]").popover();
+	$("[data-toggle=popover]").popover({
+		trigger : 'hover'
+	});
 
 	$('.badge-fav').click(function () {
 		$(this).toggleClass('badge-chosen');
