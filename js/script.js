@@ -26,7 +26,7 @@ $(window).load(function() {
 
 $(document).ready(function(){
 
-	var compareCount = 0;
+	var compareCount=0,favCount = 0;
 	(function focusOnTab(){
 		var currentUrl =  window.location.search;
 
@@ -68,18 +68,23 @@ $(document).ready(function(){
 
 	$('.badge-fav').click(function () {
 		$(this).toggleClass('badge-chosen');
-		var justAdedToFav = $(this).hasClass('badge-chosen');
-		justAdedToFav ?  addToFav.call(this) : removeFromFav.call(this) ;
+		var addedToFav = $(this).hasClass('badge-chosen');
+		addedToFav ? addToFav.call(this) : removeFromFav.call(this);
+		$('.fav-badge').text(favCount);
 	});
 
 	function addToFav(){
 		$(this).text('Added to Fav');
-		$('#fav-dialog-add').modal('show')
+		$('#fav-dialog-add').modal('show');
+		favCount+=1;
 	}
 	function removeFromFav(){
 		$(this).text('+ Add to Fav');
-		$('#fav-dialog-remove').modal('show')
+		$('#fav-dialog-remove').modal('show');
+		favCount-=1;
+
 	}
+
 
 	$('.badge-compare').click(function () {
 		$(this).toggleClass('badge-chosen');
@@ -195,9 +200,23 @@ $(document).ready(function(){
 			$('.langs-drop').hide();
 		}
 	);
-	$('.header-viewed').hover(
+	$('.header-viewed-fav').hover(
 		function() {
-			$('.viewed-drop').fadeIn();
+			var text = $(this).find('.fav-badge').text();
+			if(text > 0){
+				$(this).find('.viewed-drop-full').fadeIn();
+			}else {
+				$(this).find('.viewed-drop-empty').fadeIn();
+			}
+			//$('.viewed-drop').fadeIn();
+		}, function() {
+			$('.viewed-drop').hide();
+		}
+	);
+	$('.header-viewed-recent').hover(
+		function() {
+			var text = $(this).find('.fav-badge').text();
+				$(this).find('.viewed-drop').fadeIn();
 		}, function() {
 			$('.viewed-drop').hide();
 		}
