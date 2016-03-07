@@ -57,7 +57,7 @@ $(document).ready(function(){
 				scrollTop:$('.page-search.full-width-search.search-type-b').offset().top - 70
 			},1000);
 		}else{
-			$('#hotelTab').addClass('active');
+			$('#holidayTab').addClass('active');
 		}
 	})();
 
