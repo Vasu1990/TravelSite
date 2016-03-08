@@ -69,7 +69,7 @@
 				<a href="pinterest.com" class="social-pinterest"></a>
 				<a href="instagram.com" class="social-instagram"></a>
 			</div>
-			<div class="header-viewed">
+			<div class="header-viewed header-viewed-recent">
 				<a href="#" class="header-viewed-btn">recently viewed</a>
 				<!-- // viewed drop // -->
 				<div class="viewed-drop">
@@ -82,7 +82,7 @@
 							<div class="viewed-item-r">
 								<div class="viewed-item-lbl"><a href="#">Hotel Bright Land</a></div>
 								<div class="viewed-item-cat">location: Shimla,HP</div>
-								<div class="viewed-price">Rs.3000/-</div>
+								<div class="viewed-price">&#8377; 3000/-</div>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -95,7 +95,7 @@
 							<div class="viewed-item-r">
 								<div class="viewed-item-lbl"><a href="#">Ermin's Adventure Tour</a></div>
 								<div class="viewed-item-cat">location: dubai</div>
-								<div class="viewed-price">Rs.11000/-</div>
+								<div class="viewed-price">&#8377; 11000/-</div>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -106,10 +106,43 @@
 								<a href="#"><img alt="" src="img/v-item-03.jpg" /></a>
 							</div>
 							<div class="viewed-item-r">
-								<div class="viewed-item-lbl"><a href="#">Hotel Himgiri</a></div>
+								<div class="viewed-item-lbl"><a href="#" data-target="#">Hotel Himgiri</a></div>
 								<div class="viewed-item-cat">location: Shimla,HP</div>
-								<div class="viewed-price">Rs.2600/-</div>
+								<div class="viewed-price">&#8377; 2600/-</div>
 							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+					</div>
+				</div>
+				<!-- \\ viewed drop \\ -->
+			</div>
+			<div class="header-viewed header-viewed-fav">
+				<span class="fav-badge">0</span>
+				<a href="#" class="header-viewed-btn">Fav</a>
+				<!-- // viewed drop // -->
+				<div class="viewed-drop viewed-drop-full">
+					<div class="viewed-drop-a">
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-01.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Hotel Bright Land</a></div>
+								<div class="viewed-item-cat">location: Shimla,HP</div>
+								<div class="viewed-price">&#8377; 3000/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+					</div>
+				</div>
+				<div class="viewed-drop viewed-drop-empty">
+					<div class="viewed-drop-a">
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-lbl"><a href="#">NO item added to fav list</a></div>
 							<div class="clear"></div>
 						</div>
 						<!-- \\ -->
@@ -125,7 +158,7 @@
 		<div class="mobile-menu">
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a>
+					<li><a href="/">Home</a>
 					</li>
 					<li><a href="index.html?hotelTab">Hotels</a>
 					</li>
@@ -146,7 +179,7 @@
 		<!-- \\ mobile menu \\ -->
 
 		<div class="wrapper-padding">
-			<div class="header-logo"><a href="index.html"><img alt="" src="img/logo.png" /></a>
+			<div class="header-logo"><a href="/"><img alt="" src="img/logo.png" /></a>
 				<h1 class="header-logo-text">break eazy</h1>
 			</div>
 			<div class="header-right">
@@ -164,7 +197,7 @@
 				<a href="#" class="menu-btn"></a>
 				<nav class="header-nav">
 					<ul>
-						<li><a href="index.html">Home</a>
+						<li><a href="/">Home</a>
 						</li>
 						<li><a href="index.html?hotelTab">Hotels</a>
 						</li>
@@ -174,6 +207,10 @@
 						</li>
 						<li><a href="index.html?activityTab">Tour & Activities</a></li>
 						<li><a href="compare.html">Compare</a>
+							<ul style="display: none;">
+								<li><a href="compare.html">Compare Holidays</a></li>
+								<li><a href="compare-tour.html">Compare Tours</a></li>
+							</ul>
 							<span class="compare-badge">0</span>
 						</li>
 						</li>
@@ -196,7 +233,7 @@
     <div class="page-head">
       <div class="page-title">Hotels - <span>Shimla, 22 March 2016 </span></div>
       <div class="breadcrumbs">
-        <a href="index.html">Home</a> /<a href="index.html?hotelTab">Hotels</a>	 / <span>Search results</span>
+        <a href="/">Home</a> /<a href="index.html?hotelTab">Hotels</a>	 / <span>Search results</span>
       </div>
       <div class="clear"></div>
     </div>
@@ -456,7 +493,7 @@
               <!-- // -->
                 <div class="cat-list-item fly-in">
                   <div class="cat-list-item-l">
-                      <a href="#"><img alt="" src="img/lit-i-01.jpg"></a>
+                      <a href="#" class="openHotelImageModal" data-toggle="modal"><img alt="" src="img/lit-i-01.jpg"></a>
                   </div>
 					<div class="cat-list-item-r">
 						<div class="cat-list-item-rb">
@@ -467,7 +504,6 @@
 											<div class="cat-list-content-lb">
 												<div class="cat-list-content-lpadding">
 													<div class="offer-slider-link"><a href="#">Hotel Himgiri</a>
-														<span class="discount-tag">20% off</span>
 														<nav class="stars">
 															<ul>
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
@@ -476,6 +512,7 @@
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 																<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 															</ul>
+															<img src="img/trip-advisor.png">
 															<div class="clear"></div>
 														</nav>
 
@@ -518,10 +555,11 @@
 
 											<div class="mg-bt27">
 												<a href="http://travelguru.com" target="_blank"><img alt="" src="img/travelGuru.png"></a>
+												<span class="discount-tag">20% off</span>
 											</div>
 											<div class="offer-slider-r">
-												<b class="discount-price">Rs.3000/-</b>
-												<b>Rs.2400/-</b>
+												<b class="discount-price">&#8377; 3000/-</b>
+												<b>&#8377; 2400/-</b>
 												<span>avg/night</span>
 											</div>
 											<a href="http://travelguru.com" target="_blank" class="cat-list-btn">Book</a>
@@ -544,8 +582,12 @@
 								<nav class="stars">
 									<ul>
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 									</ul>
+									<img src="img/trip-advisor.png">
 									<div class="clear"></div>
 								</nav>
 							</div>
@@ -563,7 +605,7 @@
 							</div>
 							<div class="alt-details-i">
 								<div class="offer-slider-r">
-									<b>Rs.2500/-</b>
+									<b>&#8377; 2500/-</b>
 									<span>avg/night</span>
 								</div>
 							</div>
@@ -580,7 +622,10 @@
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 									</ul>
+									<img src="img/trip-advisor.png">
 									<div class="clear"></div>
 								</nav>
 							</div>
@@ -591,7 +636,7 @@
 							</div>
 							<div class="alt-details-i">
 								<div class="offer-slider-r">
-									<b>Rs.2600/-</b>
+									<b>&#8377; 2600/-</b>
 									<span>avg/night</span>
 								</div>
 							</div>
@@ -609,7 +654,9 @@
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 									</ul>
+									<img src="img/trip-advisor.png">
 									<div class="clear"></div>
 								</nav>
 							</div>
@@ -620,7 +667,7 @@
 							</div>
 							<div class="alt-details-i">
 								<div class="offer-slider-r">
-									<b>Rs.2650/-</b>
+									<b>&#8377; 2650/-</b>
 									<span>avg/night</span>
 								</div>
 							</div>
@@ -640,6 +687,7 @@
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 									</ul>
+									<img src="img/trip-advisor.png">
 									<div class="clear"></div>
 								</nav>
 							</div>
@@ -657,7 +705,7 @@
 							</div>
 							<div class="alt-details-i">
 								<div class="offer-slider-r">
-									<b>Rs.2800/-</b>
+									<b>&#8377; 2800/-</b>
 									<span>avg/night</span>
 								</div>
 							</div>
@@ -671,7 +719,7 @@
               <!-- // -->
                 <div class="cat-list-item fly-in">
                   <div class="cat-list-item-l">
-                      <a href="#"><img alt="" src="img/lit-i-02.jpg"></a>
+					  <a href="#" class="openHotelImageModal" data-toggle="modal"><img alt="" src="img/lit-i-02.jpg"></a>
                   </div>
 					<div class="cat-list-item-r">
 						<div class="cat-list-item-rb">
@@ -681,7 +729,13 @@
 										<div class="cat-list-content-l">
 											<div class="cat-list-content-lb">
 												<div class="cat-list-content-lpadding">
-													<div class="offer-slider-link"><a href="#">Hotel Hill Top</a>
+													<div class="offer-slider-link"><a href="#">
+														Hotel Hill Top</a>
+														<a class="offer-btn" href="javascript:void(0)" data-toggle="popover" data-html="true" ,="" data-placement="top" data-content="<ul class='offer-popover'>
+								   <li><b>20% off using HDFC Credit Card</b></li>
+								   <li><b>10% off using Axis Bank Debit Card</b></li>
+								   <li><b>Pay with Paytm Get 12% Cash Back</b></li>
+								   </ul>" title="" data-original-title="" style="float: right;color: white;">Offers</a>
 														<nav class="stars">
 															<ul>
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
@@ -690,6 +744,7 @@
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 																<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 															</ul>
+															<img src="img/trip-advisor.png">
 															<div class="clear"></div>
 														</nav>
 													</div>
@@ -733,7 +788,7 @@
 												<a href="https://yatra.com" target="_blank"><img alt="" src="img/yatra.png"></a>
 											</div>
 											<div class="offer-slider-r">
-												<b>Rs.2700/-</b>
+												<b>&#8377; 2700/-</b>
 												<span>avg/night</span>
 											</div>
 											<a href="http://yatra.com" target="_blank" class="cat-list-btn">Book</a>
@@ -757,7 +812,9 @@
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
+										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 									</ul>
+									<img src="img/trip-advisor.png">
 									<div class="clear"></div>
 								</nav>
 							</div>
@@ -768,7 +825,7 @@
 							</div>
 							<div class="alt-details-i">
 								<div class="offer-slider-r">
-									<b>Rs.2850/-</b>
+									<b>&#8377; 2850/-</b>
 									<span>avg/night</span>
 								</div>
 							</div>
@@ -788,6 +845,7 @@
 										<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 										<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 									</ul>
+									<img src="img/trip-advisor.png">
 									<div class="clear"></div>
 								</nav>
 							</div>
@@ -798,7 +856,7 @@
 							</div>
 							<div class="alt-details-i">
 								<div class="offer-slider-r">
-									<b>Rs.3100/-</b>
+									<b>&#8377; 3100/-</b>
 									<span>avg/night</span>
 								</div>
 							</div>
@@ -813,7 +871,7 @@
               <!-- // -->
                 <div class="cat-list-item fly-in">
                   <div class="cat-list-item-l">
-                      <a href="#"><img alt="" src="img/lit-i-03.jpg"></a>
+					  <a href="#" class="openHotelImageModal" data-toggle="modal"><img alt="" src="img/lit-i-03.jpg"></a>
                   </div>
 					<div class="cat-list-item-r">
 						<div class="cat-list-item-rb">
@@ -824,7 +882,6 @@
 											<div class="cat-list-content-lb">
 												<div class="cat-list-content-lpadding">
 													<div class="offer-slider-link"><a href="#">Hotel Hill View</a>
-														<span class="discount-tag">10% off</span>
 														<nav class="stars">
 															<ul>
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
@@ -833,6 +890,7 @@
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 																<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 															</ul>
+															<img src="img/trip-advisor.png">
 															<div class="clear"></div>
 														</nav>
 													</div>
@@ -871,12 +929,13 @@
 
 											<div class="mg-bt27">
 												<a href="http://hotels.com" target="_blank"><img alt="" src="img/Hotels.png"></a>
+												<span class="discount-tag">10% off</span>
 											</div>
 
 											<div class="offer-slider-r">
 
-												<b class="discount-price">Rs.3300/-</b>
-												<b>Rs.2970/-</b>
+												<b class="discount-price">&#8377; 3300/-</b>
+												<b>&#8377; 2970/-</b>
 												<span>avg/night</span>
 											</div>
 											<a href="http://hotels.com" target="_blank" class="cat-list-btn">Book</a>
@@ -894,7 +953,7 @@
               <!-- // -->
                 <div class="cat-list-item fly-in">
                   <div class="cat-list-item-l">
-                      <a href="#"><img alt="" src="img/lit-i-04.jpg"></a>
+					  <a href="#" class="openHotelImageModal" data-toggle="modal"><img alt="" src="img/lit-i-04.jpg"></a>
                   </div>
 					<div class="cat-list-item-r">
 						<div class="cat-list-item-rb">
@@ -913,6 +972,7 @@
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 																<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 															</ul>
+															<img src="img/trip-advisor.png">
 															<div class="clear"></div>
 														</nav>
 													</div>
@@ -950,7 +1010,7 @@
 
 											<div class="mg-bt27"><a href="http://hoteling.com" target="_blank"><img alt="" src="img/Hoteling.png"></a></div>
 											<div class="offer-slider-r">
-											<b>Rs.3100/-</b>
+											<b>&#8377; 3100/-</b>
 												<span>avg/night</span>
 											</div>
 											<a href="http://hoteling.com" target="_blank" class="cat-list-btn">Book</a>
@@ -968,7 +1028,7 @@
               <!-- // -->
                 <div class="cat-list-item fly-in">
                   <div class="cat-list-item-l">
-                      <a href="#"><img alt="" src="img/lit-i-05.jpg"></a>
+					  <a href="#" class="openHotelImageModal" data-toggle="modal"><img alt="" src="img/lit-i-05.jpg"></a>
                   </div>
 					<div class="cat-list-item-r">
 						<div class="cat-list-item-rb">
@@ -979,6 +1039,11 @@
 											<div class="cat-list-content-lb">
 												<div class="cat-list-content-lpadding">
 													<div class="offer-slider-link"><a href="#">Feel Home Hotel</a>
+														<a class="offer-btn" href="javascript:void(0)" data-toggle="popover" data-html="true" ,="" data-placement="top" data-content="<ul class='offer-popover'>
+								   <li><b>20% off using HDFC Credit Card</b></li>
+								   <li><b>10% off using Axis Bank Debit Card</b></li>
+								   <li><b>Pay with Paytm Get 12% Cash Back</b></li>
+								   </ul>" title="" data-original-title="" style="float: right;color: white;">Offers</a>
 														<nav class="stars">
 															<ul>
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
@@ -987,6 +1052,7 @@
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 																<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 															</ul>
+															<img src="img/trip-advisor.png">
 															<div class="clear"></div>
 														</nav>
 													</div>
@@ -1027,7 +1093,7 @@
 												<a href="http://travelguru.com" target="_blank"><img alt="" src="img/travelGuru.png"></a>
 											</div>
 											<div class="offer-slider-r">
-												<b>Rs.3300/-</b>
+												<b>&#8377; 3300/-</b>
 												<span>avg/night</span>
 											</div>
 											<a href="http://travelguru.com" target="_blank" class="cat-list-btn">Book</a>
@@ -1045,7 +1111,7 @@
               <!-- // -->
                 <div class="cat-list-item fly-in">
                   <div class="cat-list-item-l">
-                      <a href="#"><img alt="" src="img/lit-i-06.jpg"></a>
+					  <a href="#" class="openHotelImageModal" data-toggle="modal"><img alt="" src="img/lit-i-06.jpg"></a>
                   </div>
 					<div class="cat-list-item-r">
 						<div class="cat-list-item-rb">
@@ -1064,6 +1130,7 @@
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 																<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 															</ul>
+															<img src="img/trip-advisor.png">
 															<div class="clear"></div>
 														</nav></div>
 													<div class="offer-slider-location">Shimla , Himachal Pradesh </div>
@@ -1101,7 +1168,7 @@
 												<a href="http://makemytrip.com" target="_blank"><img alt="" src="img/mmt.png"></a>
 											</div>
 											<div class="offer-slider-r">
-												<b>Rs.3500/-</b>
+												<b>&#8377; 3500/-</b>
 												<span>avg/night</span>
 											</div>
 											<a href="http://makemytrip.com" target="_blank" class="cat-list-btn">Book</a>
@@ -1119,7 +1186,7 @@
               <!-- // -->
                 <div class="cat-list-item fly-in">
                   <div class="cat-list-item-l">
-                      <a href="#"><img alt="" src="img/lit-i-07.jpg"></a>
+					  <a href="#" class="openHotelImageModal" data-toggle="modal"><img alt="" src="img/lit-i-07.jpg"></a>
                   </div>
 					<div class="cat-list-item-r">
 						<div class="cat-list-item-rb">
@@ -1138,6 +1205,7 @@
 																<li><a href="#"><img alt="" src="img/star-b.png"></a></li>
 																<li><a href="#"><img alt="" src="img/star-a.png"></a></li>
 															</ul>
+															<img src="img/trip-advisor.png">
 															<div class="clear"></div>
 														</nav></div>
 													<div class="offer-slider-location">Shimla , Himachal Pradesh </div>
@@ -1177,7 +1245,7 @@
 												<a href="http://booking.com" target="_blank"><img alt="" src="img/booking.png"></a>
 											</div>
 											<div class="offer-slider-r">
-												<b>Rs.4000/-</b>
+												<b>&#8377; 4000/-</b>
 												<span>avg/night</span>
 											</div>
 											<a href="http://booking.com" target="_blank" class="cat-list-btn">Book</a>
@@ -1233,7 +1301,7 @@
 					<div class="footer-tour-r">
 						<div class="footer-tour-a">amsterdam Tour & Activities</div>
 						<div class="footer-tour-b">location: netherlands</div>
-						<div class="footer-tour-c">Rs.41,000/-</div>
+						<div class="footer-tour-c">&#8377; 41,000/-</div>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -1255,7 +1323,7 @@
 					<div class="footer-tour-r">
 						<div class="footer-tour-a">vienna Tour & Activities</div>
 						<div class="footer-tour-b">location: austria</div>
-						<div class="footer-tour-c">Rs.90,000/-</div>
+						<div class="footer-tour-c">&#8377; 90,000/-</div>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -1355,6 +1423,212 @@
 	</div>
 </footer>
 
+
+<!-- modal hotel images-->
+<!-- Modal -->
+<div class="modal fade" id="hotelImages" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Hotel Images</h4>
+			</div>
+			<div class="modal-body">
+
+
+				<div class="mm-tabs-wrapper">
+					<!-- // tab item // -->
+					<div class="tab-item">
+						<div class="tab-gallery-big">
+							<img alt="" src="img/tab-photo-01.jpg">
+						</div>
+						<div class="tab-gallery-preview">
+							<div class="bx-wrapper" style="max-width: 683px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 78px;"><div id="gallery" style="width: 815%; position: relative; transition-duration: 0s; transform: translate3d(-690px, 0px, 0px);"><div class="gallery-i active bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+								<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-01.jpg"><span></span></a>
+							</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+								<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-02.jpg"><span></span></a>
+							</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+								<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-03.jpg"><span></span></a>
+							</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+								<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-04.jpg"><span></span></a>
+							</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+								<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-05.jpg"><span></span></a>
+							</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+								<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-06.jpg"><span></span></a>
+							</div>
+								<!-- // -->
+								<div class="gallery-i active" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-01.jpg"><span></span></a>
+								</div>
+								<!-- \\ -->
+								<!-- // -->
+								<div class="gallery-i" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-02.jpg"><span></span></a>
+								</div>
+								<!-- \\ -->
+								<!-- // -->
+								<div class="gallery-i" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-03.jpg"><span></span></a>
+								</div>
+								<!-- \\ -->
+								<!-- // -->
+								<div class="gallery-i" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-04.jpg"><span></span></a>
+								</div>
+								<!-- \\ -->
+								<!-- // -->
+								<div class="gallery-i" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-05.jpg"><span></span></a>
+								</div>
+								<!-- \\ -->
+								<!-- // -->
+								<div class="gallery-i" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-06.jpg"><span></span></a>
+								</div>
+								<!-- \\ -->
+								<div class="gallery-i active bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-01.jpg"><span></span></a>
+								</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-02.jpg"><span></span></a>
+								</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-03.jpg"><span></span></a>
+								</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-04.jpg"><span></span></a>
+								</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-05.jpg"><span></span></a>
+								</div><div class="gallery-i bx-clone" style="float: left; list-style: none; position: relative; width: 108px; margin-right: 7px;">
+									<a href="img/tab-photo-01.jpg"><img alt="" src="img/tabgall-prev-06.jpg"><span></span></a>
+								</div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div><div class="bx-pager-item"><a href="" data-slide-index="5" class="bx-pager-link">6</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+						</div>
+					</div>
+					<!-- \\ tab item \\ -->
+					<!-- // tab item // -->
+					<div class="tab-item">
+						<div id="preloader">
+							<div id="spinner"></div>
+						</div>
+						<div class="tab-map">
+							<div class="contact-map">
+								<div id="map" style="position: relative; overflow: hidden; transform: translateZ(0px) translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -121px; top: -195px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -121px; top: -195px;"></div></div></div><div style="width: 19px; height: 29px; overflow: hidden; position: absolute; left: 0px; top: -32px; z-index: 0; animation-duration: 500ms; animation-iteration-count: 1; animation-name: _gm5987;"><img src="img/map.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; width: 19px; height: 29px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; z-index: 0; transform: translateZ(0px); left: 0px; top: 0px;"><div style="overflow: hidden;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="gmnoprint" title="" style="width: 19px; height: 29px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; left: 0px; top: -32px; z-index: 0;"><img src="img/map.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; width: 19px; height: 29px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 0px; height: 0px; position: absolute; left: 5px; top: 5px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;"></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 0px; bottom: 0px; width: 12px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span style="display: none;"></span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);"></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/sv5.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 112px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@52.569334,13.380216,13z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control" draggable="false" controlwidth="28" controlheight="55" style="margin: 10px; -webkit-user-select: none; position: absolute; left: 0px; top: -37px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; width: 28px; height: 55px; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; top: 0px; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=52.569334,13.380216&amp;z=13&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="http://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div></div></div>
+							</div>
+						</div>
+					</div>
+					<!-- \\ tab item \\ -->
+					<!-- // tab item // -->
+					<div class="tab-item">
+						<div class="calendar-tab">
+							<div class="calendar-tab-select">
+								<label>Select month</label>
+								<select class="custom-select hasCustomSelect" style="-webkit-appearance: menulist-button; width: 268px; position: absolute; opacity: 0; height: 34px; font-size: 14px;">
+									<option>january 2015</option>
+									<option>january 2015</option>
+									<option>january 2015</option>
+								</select><span class="customSelect custom-select" style="display: inline-block;"><span class="customSelectInner" style="display: inline-block;">january 2015</span></span>
+							</div>
+
+
+							<div class="tab-calendar-colls">
+								<div class="tab-calendar-collsl">
+									<div class="tab-calendar-collslb">
+										<table>
+											<thead>
+											<tr>
+												<td>sun</td>
+												<td>mon</td>
+												<td>tue</td>
+												<td>wed</td>
+												<td>thu</td>
+												<td>fri</td>
+												<td>sat</td>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td class="date-passed"><span><label></label></span></td>
+												<td class="date-passed"><span><label></label></span></td>
+												<td class="date-passed"><span><label></label></span></td>
+												<td><span><label>1</label></span></td>
+												<td><span><label>2</label></span></td>
+												<td><span><label>3</label></span></td>
+												<td><span><label>4</label></span></td>
+											</tr>
+											<tr>
+												<td><span><label>5</label></span></td>
+												<td><span><label>6</label></span></td>
+												<td><span><label>7</label></span></td>
+												<td><span><label>8</label></span></td>
+												<td><span><label>9</label></span></td>
+												<td><span><label>10</label></span></td>
+												<td><span><label>11</label></span></td>
+											</tr>
+											<tr>
+												<td><span><label>12</label></span></td>
+												<td><span><label>13</label></span></td>
+												<td><span><label>14</label></span></td>
+												<td><span><label>15</label></span></td>
+												<td><span><label>16</label></span></td>
+												<td><span><label>17</label></span></td>
+												<td><span><label>18</label></span></td>
+											</tr>
+											<tr>
+												<td><span><label>19</label></span></td>
+												<td><span><label>20</label></span></td>
+												<td><span><label>21</label></span></td>
+												<td><span><label>22</label></span></td>
+												<td><span><label>23</label></span></td>
+												<td><span><label>24</label></span></td>
+												<td><span><label>25</label></span></td>
+											</tr>
+											<tr>
+												<td><span><label>26</label></span></td>
+												<td class="date-available"><span><label>27</label></span></td>
+												<td class="date-available"><span><label>28</label></span></td>
+												<td class="date-available"><span><label>29</label></span></td>
+												<td class="date-unavailable"><span><label>30</label></span></td>
+												<td class="date-unavailable"><span><label>31</label></span></td>
+												<td class="date-passed"><span><label></label></span></td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="tab-calendar-collsr">
+								<div class="tab-calendar-s">
+
+									<div class="map-symbol passed">
+										<div class="map-symbol-l"></div>
+										<div class="map-symbol-r">Date past</div>
+										<div class="clear"></div>
+									</div>
+									<div class="map-symbol available">
+										<div class="map-symbol-l"></div>
+										<div class="map-symbol-r">available</div>
+										<div class="clear"></div>
+									</div>
+									<div class="map-symbol unavailable">
+										<div class="map-symbol-l"></div>
+										<div class="map-symbol-r">unavailable</div>
+										<div class="clear"></div>
+									</div>
+
+								</div>
+							</div>
+							<div class="clear"></div>
+
+						</div>
+					</div>
+					<!-- \\ tab item \\ -->
+
+				</div>
+
+
+			</div>
+ 			</div>
+	</div>
+</div>
+
 <!-- // scripts // -->
   <script src="js/jquery-1.11.1.js"></script>
   <script src="js/jquery.ui.js"></script>
@@ -1364,6 +1638,9 @@
   <script  src="js/bootstrap.min.js"></script>
   <script>
   	$(document).ready(function(){
+		$('.openHotelImageModal').click(function () {
+			$('#hotelImages').modal();
+		});
 
 
   	$('.date-inpt').datepicker();

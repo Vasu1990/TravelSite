@@ -217,6 +217,7 @@ input,select,button,textarea {outline:none;}
 	overflow: auto;
 	margin-top: 20px;
 	border:1px solid #E6E6E6;
+	background-color: white;
 
 }
 .compare-column{
@@ -249,6 +250,22 @@ input,select,button,textarea {outline:none;}
 	top: -21px;
 	background: #4a90a4;
 	color: #fff;
+	font-size: 12px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+}
+.fav-badge{
+	display: block;
+	width: 26px;
+	height: 26px !important;
+	padding-top: 4px;
+	border-radius: 1000px;
+	text-align: center;
+	position: absolute;
+	left: 50px;
+	top: 6px;
+	background: #fff;
+	color: #000;
 	font-size: 12px;
 	font-family: 'Open Sans';
 	font-weight: 600;
@@ -357,8 +374,13 @@ input,select,button,textarea {outline:none;}
 .offer-popover{padding-left: 10px}
 .offer-popover li{
 	padding-bottom: 4px;
-	font-size: 13px;
+	font-size: 11px;
 	color:grey;
+}
+.flight-stats{
+	color: #103360 !important;
+	font-size: 12px;
+	font-weight:bold;
 }
 .alt-details.align-columns{
 	width:100%;
@@ -391,8 +413,8 @@ input,select,button,textarea {outline:none;}
 .custom-modal{color:black}
 .overlay {display:none;width:100%;height:100%;background:rgba(20,29,30,0.19);position:fixed;left:0px;top:0px;z-index:9999;}
 .autorize-popup {z-index:9999;width:444px;height:255px;background:#fff;position:fixed;left:50%;top:-300px;margin-top:-128px;margin-left:-222px;}
-.autorize-tab-a {display:block;float:left;width:82px;height:27px;text-align:center;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;}
-.autorize-tab-b {display:block;float:left;width:303px;height:27px;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;padding-left:20px;}
+.autorize-tab-a {display:block;float:left;width:82px;height:27px;text-align:center;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;padding-bottom: 5px;}
+.autorize-tab-b {display:block;float:left;width:303px;height:27px;text-decoration:none;font-family: 'Raleway';font-weight:600;font-size:13px;text-transform:uppercase;color:#fff;background:#141d1e;padding-top:12px;padding-left:20px;padding-bottom: 5px;}
 .autorize-tabs a.current {color:#292828;background:#fff;cursor:default;} 
 .autorize-close {display:block;width:39px;height:39px;float:right;background:url(../img/popup-close.png) left top no-repeat;}
 .autorize-close:hover {
@@ -636,7 +658,7 @@ button.srch-btn {cursor: pointer; font-family: 'Montserrat'; font-size:11px; fon
 .input-a {position:relative;} 
 
 .date-inpt {cursor:pointer; z-index:99; position:relative;} 
-.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {border-radius:0px !important; border-color:#ebebeb;  background:#fff;} 
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {border-radius:0px !important; border-color:#ebebeb;  background:#fff;}
 
 .ui-widget-header {background:#fff !important; border:0px !important;}
 .ui-datepicker .ui-datepicker-title {font-size:12px; font-family: 'Montserrat'; text-transform:uppercase; font-weight:normal; color:#4c4c4c;}
@@ -844,7 +866,9 @@ button.srch-btn {cursor: pointer; font-family: 'Montserrat'; font-size:11px; fon
 .cat-list-content-lb {width:100%; float:left; overflow:hidden;}
 .cat-list-content-lpadding {padding: 18px 30px 7px 0px; min-height: 156px;  border-right: 1px solid #ede7e1 ;}
 .cat-list-content-r {width:124px;  float:left; overflow:hidden; margin:0 0 0 -125px;}
-.cat-list-content-p {padding:17px 0px 17px 18px; }
+.cat-list-content-p {padding:17px 0px 17px 18px; position:relative;    min-height: 216px;
+	position: relative;}
+.cat-list-btn.holiday-book{position: absolute;bottom:15px;}
 .cat-list-item .offer-slider-link {font-family: 'Raleway'; color:#252525; margin-bottom:8px;}
 .cat-list-item .offer-slider-location {font-size: 10px; line-height: 15px; margin-bottom:0px;  font-family: 'Raleway'; font-weight: 500; text-transform: uppercase;}
 .cat-list-content-l p {font-size: 13px; line-height: 21px; margin: 13px 0px 14px 0px; color:#455051; font-family: 'Raleway';}
@@ -860,18 +884,28 @@ button.srch-btn {cursor: pointer; font-family: 'Montserrat'; font-size:11px; fon
 .cat-list-item .offer-slider-r {float: none; margin-bottom: 18px; font-family: 'Raleway';
 	min-height: 50px;}
 .cat-list-item .stars {margin-bottom: 7px;}
-.cat-list-btn {display: inline-block; font-family: 'Montserrat'; font-weight:normal; background: #fff; padding:9px 15px 9px 15px; border-radius: 3px; border:1px solid #e5e5e5; text-decoration: none; color:#838383; font-size: 10px; text-transform: uppercase;}
-.cat-list-btn:hover {color:#ff7200;}                                             
+.cat-list-btn {display: inline-block; font-family: 'Montserrat'; font-weight:normal; background: #8BC34A; padding:9px 15px 9px 15px; border-radius: 3px; border:1px solid #e5e5e5; text-decoration: none; color:#ffffff; font-size: 10px; text-transform: uppercase;}
+.cat-list-btn:hover {color:#ffffff;}
 .cat-list-item .cat-list-btn {padding-left:26px; padding-right:26px;}
 .cat-list-content-l .offer-slider-link {margin-bottom:8px;}
 .cat-list-item-rb  .offer-slider-r b {font-weight:500 !important; margin-bottom:7px;}                                              
 .cat-list-item-rb .offer-slider-r span {font-size:10px;}
-.cat-list-item-rb .cat-list-btn {background:transparent; border:1px solid #e5e5e5; border-radius:3px; font-size:10px; padding-bottom:9px; padding-top:9px; font-family:'Montserrat'; color:#838383; font-weight:normal; }
-.cat-list-item-rb .cat-list-btn:hover {color:#ff7200;}
+.cat-list-item-rb .cat-list-btn {background:#8BC34A; border:1px solid #e5e5e5; border-radius:3px; font-size:10px; padding-bottom:9px; padding-top:9px; font-family:'Montserrat'; color:#FFFFFF; font-weight:normal;
+	position: absolute;
+	bottom: 12px;}
+.cat-list-item-rb .cat-list-btn:hover {color:#ffffff;}
 .cat-list-item-rb .offer-slider-link a {font-size:13px;}
 .offer-slider-txt {
 	padding:20px 13px 21px 13px;
 	background:#fff;
+}
+.review-form label{
+	font-weight:bold;
+}
+.feedback{
+	width: 70%;
+	height: 259px;
+	margin-bottom: 30px;
 }
 .offer-slider-img {
 	text-decoration:none;

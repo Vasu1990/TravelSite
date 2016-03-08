@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,700' rel='stylesheet' type='text/css'>  
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>	
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-</head>  
+</head>
 <style>
 	.compare-badge{
 		height: 22px;
@@ -74,7 +74,7 @@
 				<a href="pinterest.com" class="social-pinterest"></a>
 				<a href="instagram.com" class="social-instagram"></a>
 			</div>
-			<div class="header-viewed">
+			<div class="header-viewed header-viewed-recent">
 				<a href="#" class="header-viewed-btn">recently viewed</a>
 				<!-- // viewed drop // -->
 				<div class="viewed-drop">
@@ -87,7 +87,7 @@
 							<div class="viewed-item-r">
 								<div class="viewed-item-lbl"><a href="#">Hotel Bright Land</a></div>
 								<div class="viewed-item-cat">location: Shimla,HP</div>
-								<div class="viewed-price">Rs.3000/-</div>
+								<div class="viewed-price">&#8377; 3000/-</div>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -100,7 +100,7 @@
 							<div class="viewed-item-r">
 								<div class="viewed-item-lbl"><a href="#">Ermin's Adventure Tour</a></div>
 								<div class="viewed-item-cat">location: dubai</div>
-								<div class="viewed-price">Rs.11000/-</div>
+								<div class="viewed-price">&#8377; 11000/-</div>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -113,8 +113,41 @@
 							<div class="viewed-item-r">
 								<div class="viewed-item-lbl"><a href="#">Hotel Himgiri</a></div>
 								<div class="viewed-item-cat">location: Shimla,HP</div>
-								<div class="viewed-price">Rs.2600/-</div>
+								<div class="viewed-price">&#8377; 2600/-</div>
 							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+					</div>
+				</div>
+				<!-- \\ viewed drop \\ -->
+			</div>
+			<div class="header-viewed header-viewed-fav">
+				<span style="height:22px !important" class="fav-badge">0</span>
+				<a href="#" class="header-viewed-btn">Fav</a>
+				<!-- // viewed drop // -->
+				<div class="viewed-drop viewed-drop-full">
+					<div class="viewed-drop-a">
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-l">
+								<a href="#"><img alt="" src="img/v-item-01.jpg" /></a>
+							</div>
+							<div class="viewed-item-r">
+								<div class="viewed-item-lbl"><a href="#">Hotel Bright Land</a></div>
+								<div class="viewed-item-cat">location: Shimla,HP</div>
+								<div class="viewed-price">&#8377; 3000/-</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<!-- \\ -->
+					</div>
+				</div>
+				<div class="viewed-drop viewed-drop-empty">
+					<div class="viewed-drop-a">
+						<!-- // -->
+						<div class="viewed-item">
+							<div class="viewed-item-lbl"><a href="#">NO item added to fav list</a></div>
 							<div class="clear"></div>
 						</div>
 						<!-- \\ -->
@@ -130,7 +163,7 @@
 		<div class="mobile-menu">
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a>
+					<li><a href="/">Home</a>
 					</li>
 					<li><a href="index.html?hotelTab">Hotels</a>
 					</li>
@@ -151,7 +184,7 @@
 		<!-- \\ mobile menu \\ -->
 
 		<div class="wrapper-padding">
-			<div class="header-logo"><a href="index.html"><img alt="" src="img/logo.png" /></a>
+			<div class="header-logo"><a href="/"><img alt="" src="img/logo.png" /></a>
 				<h1 class="header-logo-text">break eazy</h1>
 			</div>
 			<div class="header-right">
@@ -169,7 +202,7 @@
 				<a href="#" class="menu-btn"></a>
 				<nav class="header-nav">
 					<ul>
-						<li><a href="index.html">Home</a>
+						<li><a href="/">Home</a>
 						</li>
 						<li><a href="index.html?hotelTab">Hotels</a>
 						</li>
@@ -179,6 +212,10 @@
 						</li>
 						<li><a href="index.html?activityTab">Tour & Activities</a></li>
 						<li><a href="compare.html">Compare</a>
+							<ul style="display: none;">
+								<li><a href="compare.html">Compare Holidays</a></li>
+								<li><a href="compare-tour.html">Compare Tours</a></li>
+							</ul>
 							<span class="compare-badge">0</span>
 						</li>
 						</li>
@@ -215,8 +252,8 @@
       				</div>
 					<div class="swiper-slide">
 						<div class="slide-section" style="background:url(img/sider-03.jpg) center top no-repeat;">
-							<div class="mp-slider-lbl">Tour & Activitiess - Compare and book the best</div>
-							<div class="mp-slider-lbl-a">Compare - Tour & Activitiess! Prices! Discount Offers!  from various sites all at one place</div>
+							<div class="mp-slider-lbl">Tour & Activities - Compare and book the best</div>
+							<div class="mp-slider-lbl-a">Compare - Tour & Activities! Prices! Discount Offers!  from various sites all at one place</div>
 							<div class="mp-slider-btn"><a href="about_us.html" class="btn-a">Learn more</a></div>
 						</div>
 					</div>
@@ -247,14 +284,327 @@
 		<div class="page-search full-width-search search-type-b">
 		  <div class="search-type-padding">
 			<nav class="page-search-tabs">
-				<div id="hotelTab" class="search-tab active">Hotels</div>
-				<div id="holidayTab" class="search-tab">Holidays</div>
-				<div id="flightTab" class="search-tab">Flights</div>
+				<div id="holidayTab" class="search-tab active">Holidays</div>
 				<div id="activityTab" class="search-tab">Tour & Activities</div>
+				<div id="hotelTab" class="search-tab">Hotels</div>
+				<div id="flightTab" class="search-tab">Flights</div>
+
 				<div class="clear"></div>
 			</nav>		
 			<div class="page-search-content">
-			
+
+				<!-- // tab content holidays // -->
+				<div class="search-tab-content holiday-tab">
+					<div class="page-search-p">
+						<!--<div class="flight-type">-->
+						<!--<ul>-->
+						<!--<li>-->
+						<!--<label for="domestic">Domestic</label>-->
+						<!--<input id="domestic" type="radio" checked name="holiday-type"></li>-->
+						<!--<li>-->
+						<!--<label for="international">International</label>-->
+						<!--<input id="international" type="radio" name="holiday-type">-->
+						<!--</li>-->
+						<!--</ul>-->
+						<!--<div class="clear"></div>-->
+						<!--</div>-->
+						<!-- // -->
+						<div class="search-large-i">
+							<!-- // -->
+							<div class="srch-tab-line no-margin-bottom">
+								<div class="srch-tab-left">
+									<label>From</label>
+									<div class="input-a"><input type="text" value="" placeholder="Austria, vienna"></div>
+								</div>
+								<div class="srch-tab-right">
+									<label>to</label>
+									<div class="input-a"><input type="text" value="" placeholder="--"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<!-- \\ -->
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="search-large-i">
+							<!-- // -->
+							<div class="srch-tab-line no-margin-bottom">
+								<div class="srch-tab-left">
+									<label>Departure</label>
+									<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
+								</div>
+								<div class="srch-tab-right">
+									<label>Return</label>
+									<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<!-- \\ -->
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="search-large-i">
+							<div class="srch-tab-line no-margin-bottom">
+								<div class="srch-tab-3c">
+									<label>Adult</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="srch-tab-3c">
+									<label>Child</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="srch-tab-3c">
+									<label>Infant</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect" >
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<!-- \\ -->
+						<div class="clear"></div>
+
+						<!-- // advanced // -->
+						<div class="search-asvanced">
+							<!-- // -->
+							<div class="search-large-i">
+								<!-- // -->
+								<div class="srch-tab-line no-margin-bottom">
+									<label>Price</label>
+									<div class="select-wrapper">
+										<select class="custom-select">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<!-- \\ -->
+							</div>
+							<!-- \\ -->
+							<!-- // -->
+							<div class="search-large-i">
+								<!-- // -->
+								<div class="srch-tab-line no-margin-bottom">
+									<label>Property type</label>
+									<div class="select-wrapper">
+										<select class="custom-select">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<!-- \\ -->
+							</div>
+							<!-- \\ -->
+							<!-- // -->
+							<div class="search-large-i">
+								<!-- // -->
+								<div class="srch-tab-line no-margin-bottom">
+									<label>rating</label>
+									<div class="select-wrapper">
+										<select class="custom-select">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<!-- \\ -->
+							</div>
+							<!-- \\ -->
+							<div class="clear"></div>
+						</div>
+						<!-- \\ advanced \\ -->
+
+					</div>
+					<footer class="search-footer">
+						<a href="holiday_list.html" class="srch-btn">Search</a>
+						<span class="srch-lbl">Advanced Search options</span>
+						<div class="clear"></div>
+					</footer>
+				</div>
+
+				<!-- // tab content tour // -->
+				<div class="search-tab-content tour-tab">
+
+					<div class="page-search-p">
+						<!-- // -->
+						<div class="search-large-i">
+							<!-- // -->
+							<div class="srch-tab-line no-margin-bottom">
+								<div class="srch-tab-left">
+									<label>Country</label>
+									<div class="input-a"><input type="text" value="" placeholder="example: India"></div>
+								</div>
+								<div class="srch-tab-right">
+									<label>city</label>
+									<div class="input-a"><input type="text" value="" placeholder="Goa"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<!-- \\ -->
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="search-large-i">
+							<!-- // -->
+							<div class="srch-tab-line no-margin-bottom">
+								<div class="srch-tab-left">
+									<label>Activity Date</label>
+									<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
+								</div>
+								<div class="srch-tab-left transformed" style="margin-left: 5px;">
+									<label>Adult</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect" style="-webkit-appearance: menulist-button; width: 155px; position: absolute; opacity: 0; height: 34px; font-size: 14px;">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select><span class="customSelect custom-select hasCustomSelect" style="display: inline-block;"><span class="customSelectInner" style="width: 151px; display: inline-block;">--</span></span>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<!-- \\ -->
+						</div>
+						<!-- \\ -->
+						<!-- // -->
+						<div class="search-large-i">
+							<!-- // -->
+							<div class="srch-tab-line no-margin-bottom">
+								<div class="srch-tab-left transformed">
+									<label>Child</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="srch-tab-right transformed">
+									<label>Infant</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<!-- \\ -->
+						</div>
+						<!-- \\ -->
+						<div class="clear"></div>
+
+						<!-- // advanced // -->
+						<div class="search-asvanced">
+							<!-- // -->
+							<div class="search-large-i">
+								<!-- // -->
+								<div class="srch-tab-line no-margin-bottom">
+									<label>Price</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<!-- \\ -->
+							</div>
+							<!-- \\ -->
+							<!-- // -->
+							<div class="search-large-i">
+								<!-- // -->
+								<div class="srch-tab-line no-margin-bottom">
+									<label>Type</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>Fun</option>
+											<option>Sports</option>
+											<option>Adventure</option>
+											<option>Romance</option>
+										</select>
+									</div>
+								</div>
+								<!-- \\ -->
+							</div>
+							<!-- \\ -->
+							<!-- // -->
+							<div class="search-large-i">
+								<!-- // -->
+								<div class="srch-tab-line no-margin-bottom">
+									<label>Duration</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1 - 2 Days</option>
+											<option>2 - 3 Days</option>
+											<option>3 - 4 Days</option>
+											<option>4 - 5 Days</option>
+										</select>
+									</div>
+								</div>
+								<!-- \\ -->
+							</div>
+							<!-- \\ -->
+							<div class="clear"></div>
+						</div>
+						<!-- \\ advanced \\ -->
+
+					</div>
+					<footer class="search-footer">
+						<a href="tour_list.html" class="srch-btn">Search</a>
+						<span class="srch-lbl">Advanced Search options</span>
+						<div class="clear"></div>
+					</footer>
+				</div>
+				<!-- // tab content holidays // -->
+
 				<!-- // tab content hotels // -->
 				<div class="search-tab-content hotel-tab">
 					<div class="page-search-p">
@@ -399,141 +749,7 @@
 				</div>
 				<!-- // tab content hotels // -->
 					
-				<!-- // tab content holidays // -->
-				<div class="search-tab-content holiday-tab">
-					<div class="page-search-p">
-						<!--<div class="flight-type">-->
-							<!--<ul>-->
-								<!--<li>-->
-									<!--<label for="domestic">Domestic</label>-->
-									<!--<input id="domestic" type="radio" checked name="holiday-type"></li>-->
-								<!--<li>-->
-									<!--<label for="international">International</label>-->
-									<!--<input id="international" type="radio" name="holiday-type">-->
-								<!--</li>-->
-							<!--</ul>-->
-							<!--<div class="clear"></div>-->
-						<!--</div>-->
-					<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<div class="srch-tab-left">
-									<label>From</label>
-									<div class="input-a"><input type="text" value="" placeholder="Austria, vienna"></div>
-								</div>
-								<div class="srch-tab-right">
-									<label>to</label>
-									<div class="input-a"><input type="text" value="" placeholder="--"></div>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<!-- \\ -->
-						</div>
-					<!-- \\ -->
-					<!-- // -->
-					<div class="search-large-i">
-						<!-- // -->
-						<div class="srch-tab-line no-margin-bottom">
-							<div class="srch-tab-left">
-								<label>Check in</label>
-								<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
-							</div>
-							<div class="srch-tab-right">
-								<label>Check out</label>
-								<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
-							</div>
-							<div class="clear"></div>
-						</div>
-						<!-- \\ -->					
-					</div>
-					<!-- \\ -->
-					<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<div class="srch-tab-left">
-									<label>Start Date</label>
-									<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
-								</div>
-								<div class="srch-tab-right">
-									<label>End Date</label>
-									<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<!-- \\ -->
-						</div>
-					<!-- \\ -->
-					<div class="clear"></div>
 
-					<!-- // advanced // -->
-					<div class="search-asvanced">
-						<!-- // -->
-						<div class="search-large-i">
-						<!-- // -->
-						<div class="srch-tab-line no-margin-bottom">
-							<label>Price</label>
-							<div class="select-wrapper">
-								<select class="custom-select">
-									<option>--</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-							</div>	
-						</div>
-						<!-- \\ -->							
-						</div>	
-						<!-- \\ -->
-						<!-- // -->
-						<div class="search-large-i">
-						<!-- // -->
-						<div class="srch-tab-line no-margin-bottom">
-							<label>Property type</label>
-							<div class="select-wrapper">
-								<select class="custom-select">
-									<option>--</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-							</div>	
-						</div>
-						<!-- \\ -->								
-						</div>	
-						<!-- \\ -->
-						<!-- // -->
-						<div class="search-large-i">
-						<!-- // -->
-						<div class="srch-tab-line no-margin-bottom">
-							<label>rating</label>
-							<div class="select-wrapper">
-								<select class="custom-select">
-									<option>--</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-							</div>	
-						</div>
-						<!-- \\ -->								
-						</div>	
-						<!-- \\ -->
-						<div class="clear"></div>		
-					</div>
-					<!-- \\ advanced \\ -->
-						
-					</div>
-					<footer class="search-footer">
-						<a href="holiday_list.html" class="srch-btn">Search</a>
-						<span class="srch-lbl">Advanced Search options</span>
-						<div class="clear"></div>
-					</footer>
-				</div>
 				<!-- // tab content tours // -->	
 				
 				<!-- // tab content tickets // -->
@@ -576,7 +792,7 @@
 								<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>	
 							</div>
 							<div class="srch-tab-right hide" id="div-arrival">
-								<label>arrivals</label>
+								<label>Return</label>
 								<div class="input-a"><input type="text" value="" class="date-inpt" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>	
 							</div>
 							<div class="clear"></div>
@@ -587,32 +803,45 @@
 						<!-- // -->
 						<div class="search-large-i">
 						<!-- // -->
-						<div class="srch-tab-line no-margin-bottom">
-							<div class="srch-tab-left transformed">
-								<label>Peoples</label>
-								<div class="select-wrapper">
-								<select class="custom-select">
-									<option>--</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-								</div>	
+							<div class="srch-tab-line no-margin-bottom">
+								<div class="srch-tab-3c">
+									<label>Adult</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="srch-tab-3c">
+									<label>Child</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect">
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="srch-tab-3c">
+									<label>Infant</label>
+									<div class="select-wrapper">
+										<select class="custom-select hasCustomSelect" >
+											<option>--</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+								<div class="clear"></div>
 							</div>
-							<div class="srch-tab-right transformed">
-								<label>Class</label>
-								<div class="select-wrapper">
-								<select class="custom-select">
-									<option>--</option>
-									<option>Business</option>
-									<option>Economy</option>
-									<option>First Class</option>
-								</select>
-								</div>	
-							</div>
-							<div class="clear"></div>
-						</div>
 						<!-- \\ -->								
 						</div>
 						<!-- \\ -->
@@ -685,143 +914,7 @@
 				</div>
 				<!-- // tab content tickets // -->
 
-				<!-- // tab content tour // -->
-				<div class="search-tab-content tour-tab">
 
-					<div class="page-search-p">
-						<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<div class="srch-tab-left">
-									<label>Country</label>
-									<div class="input-a"><input type="text" value="" placeholder="example: India"></div>
-								</div>
-								<div class="srch-tab-right">
-									<label>city</label>
-									<div class="input-a"><input type="text" value="" placeholder="Goa"></div>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<!-- \\ -->
-						</div>
-						<!-- \\ -->
-						<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<div class="srch-tab-left">
-									<label>Activity Date</label>
-									<div class="input-a"><input type="text" value="" class="date-inpt hasDatepicker" placeholder="mm/dd/yy"> <span class="date-icon"></span></div>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<!-- \\ -->
-						</div>
-						<!-- \\ -->
-						<!-- // -->
-						<div class="search-large-i">
-							<!-- // -->
-							<div class="srch-tab-line no-margin-bottom">
-								<div class="srch-tab-left transformed">
-									<label>Type</label>
-									<div class="select-wrapper">
-										<select class="custom-select hasCustomSelect">
-											<option>--</option>
-											<option>Fun</option>
-											<option>Sports</option>
-											<option>Adventure</option>
-											<option>Romance</option>
-										</select>
-									</div>
-								</div>
-								<div class="srch-tab-right transformed">
-									<label>Peoples</label>
-									<div class="select-wrapper">
-										<select class="custom-select hasCustomSelect">
-											<option>--</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-										</select>
-									</div>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<!-- \\ -->
-						</div>
-						<!-- \\ -->
-						<div class="clear"></div>
-
-						<!-- // advanced // -->
-						<div class="search-asvanced">
-							<!-- // -->
-							<div class="search-large-i">
-								<!-- // -->
-								<div class="srch-tab-line no-margin-bottom">
-									<label>Price</label>
-									<div class="select-wrapper">
-										<select class="custom-select hasCustomSelect">
-											<option>--</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-										</select>
-									</div>
-								</div>
-								<!-- \\ -->
-							</div>
-							<!-- \\ -->
-							<!-- // -->
-							<div class="search-large-i">
-								<!-- // -->
-								<div class="srch-tab-line no-margin-bottom">
-									<label>Rating</label>
-									<div class="select-wrapper">
-										<select class="custom-select hasCustomSelect">
-											<option>--</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-										</select>
-									</div>
-								</div>
-								<!-- \\ -->
-							</div>
-							<!-- \\ -->
-							<!-- // -->
-							<div class="search-large-i">
-								<!-- // -->
-								<div class="srch-tab-line no-margin-bottom">
-									<label>Duration</label>
-									<div class="select-wrapper">
-										<select class="custom-select hasCustomSelect">
-											<option>--</option>
-											<option>1 - 2 Days</option>
-											<option>2 - 3 Days</option>
-											<option>3 - 4 Days</option>
-											<option>4 - 5 Days</option>
-										</select>
-									</div>
-								</div>
-								<!-- \\ -->
-							</div>
-							<!-- \\ -->
-							<div class="clear"></div>
-						</div>
-						<!-- \\ advanced \\ -->
-
-					</div>
-					<footer class="search-footer">
-						<a href="tour_list.html" class="srch-btn">Search</a>
-						<span class="srch-lbl">Advanced Search options</span>
-						<div class="clear"></div>
-					</footer>
-				</div>
-				<!-- // tab content holidays // -->
 			</div>
 		</div>
 		</div>
@@ -832,29 +925,140 @@
 	</div>
 		
 	<div class="mp-pop">
-		<div class="mp-offesr no-margin">
-			<div class="wrapper-padding-a">
-				<div class="offer-slider duble-margin">
-					<header class="fly-in page-lbl appeared">
-						<div class="offer-slider-lbl">We are Offering the hottest offers</div>
-						<p>We bring to you the hottest and most popular offers and discounts from all our partner sites for booking flights,hotels,tours and Tour & Activitiess.</p>
-					</header>
+		<!--<div class="mp-offesr no-margin">-->
+			<!--<div class="wrapper-padding-a">-->
+				<!--<div class="offer-slider duble-margin">-->
+					<!--<header class="fly-in page-lbl appeared">-->
+						<!--<div class="offer-slider-lbl">We are Offering the hottest offers</div>-->
+						<!--<p>We bring to you the hottest and most popular offers and discounts from all our partner sites for booking flights,hotels,tours and Tour & Activitiess.</p>-->
+					<!--</header>-->
 
-					<div class="blog-post-preview">
-						<div class="blog-post-slider">
-							<div class="blog-post-st">
-								<div class="blog-post-slider-i"><a href=http://"makemytrip.com"><img alt="" src="img/holiday1-deal.jpg"></a></div>
-								<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/intl-hotel-deal.jpg"></a></div>
-								<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/hotel-deal.jpg"></a></div>
-								<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/flight-deal.jpg"></a></div>
-								<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/international-flight-deal.jpg"></a></div>
-							</div>
+					<!--<div class="blog-post-preview">-->
+						<!--<div class="blog-post-slider">-->
+							<!--<div class="blog-post-st">-->
+								<!--<div class="blog-post-slider-i"><a href=http://"makemytrip.com"><img alt="" src="img/holiday1-deal.jpg"></a></div>-->
+								<!--<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/intl-hotel-deal.jpg"></a></div>-->
+								<!--<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/hotel-deal.jpg"></a></div>-->
+								<!--<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/flight-deal.jpg"></a></div>-->
+								<!--<div class="blog-post-slider-i"><a href="http://makemytrip.com"><img alt="" src="img/international-flight-deal.jpg"></a></div>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+		<div class="mp-popular popular-destinations">
+			<header class="fly-in">
+				<b>Trending Deals</b>
+				<p>Some of the popular deals amongst our users.</p>
+			</header>
+
+			<div class="fly-in mp-popular-row" >
+				<!-- // -->
+				<div class="offer-slider-i">
+					<a class="offer-slider-img" href="tour_detail.html">
+						<img alt="" src="img/offer-big-01.jpg" />
+								<span class="offer-slider-overlay">
+									<span class="offer-slider-btn">view details</span>
+								</span>
+					</a>
+					<div class="offer-slider-txt">
+						<div class="offer-slider-link"><a href="tour_detail.html">Paris, france</a></div>
+						<div class="offer-slider-l">
+							<span><img alt="" src="img/mmt.png"></span>
+							<div class="offer-slider-location">3 Days 2 Nights</div>
+
 						</div>
+						<div class="offer-slider-r align-right">
+							<nav class="stars">
+								<ul>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-a.png" /></a></li>
+								</ul>
+								<div class="clear"></div>
+							</nav>
+							<b>&#8377; 40,000/-</b>
+							<span>price</span>
+						</div>
+						<div class="offer-slider-devider"></div>
+						<div class="clear"></div>
 					</div>
 				</div>
-			</div>
-		</div>
+				<!-- \\ -->
+				<!-- // -->
+				<div class="offer-slider-i">
+					<a class="offer-slider-img" href="tour_detail.html">
+						<img alt="" src="img/kerala.jpg" />
+								<span class="offer-slider-overlay">
+									<span class="offer-slider-btn">view details</span>
+								</span>
+					</a>
+					<div class="offer-slider-txt">
+						<div class="offer-slider-link"><a href="tour_detail.html">Kerala , India</a></div>
+						<div class="offer-slider-l">
+							<span><img alt="" src="img/cleartrip.png"></span>
+							<div class="offer-slider-location">2 Days , 1 Night</div>
 
+						</div>
+						<div class="offer-slider-r align-right">
+							<nav class="stars">
+								<ul>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-a.png" /></a></li>
+								</ul>
+								<div class="clear"></div>
+							</nav>
+							<b>&#8377; 12,000/-</b>
+							<span>price</span>
+						</div>
+						<div class="offer-slider-devider"></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!-- \\ -->
+				<!-- // -->
+				<div class="offer-slider-i">
+					<a class="offer-slider-img" href="tour_detail.html">
+						<img alt="" src="img/offer-big-02.jpg" />
+								<span class="offer-slider-overlay">
+									<span class="offer-slider-btn">view details</span>
+								</span>
+					</a>
+					<div class="offer-slider-txt">
+						<div class="offer-slider-link"><a href="tour_detail.html">london, england</a></div>
+						<div class="offer-slider-l">
+							<span><img alt="" src="img/yatra.png"></span>
+							<div class="offer-slider-location">5 Days 2 Nights</div>
+
+						</div>
+						<div class="offer-slider-r align-right">
+							<nav class="stars">
+								<ul>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
+									<li><a href="#"><img alt="" src="img/star-a.png" /></a></li>
+								</ul>
+								<div class="clear"></div>
+							</nav>
+							<b>&#8377; 72,000/-</b>
+							<span>price</span>
+						</div>
+						<div class="offer-slider-devider"></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!-- \\ -->
+			</div>
+			<div class="clear"></div>
+		</div>
 
 		<div class="wrapper-padding-a">
 			<div class="mp-popular">
@@ -883,118 +1087,7 @@
 
 
 
-			<div class="mp-popular popular-destinations">
-				<header class="fly-in">
-					<b>Trending Deals</b>
-					<p>Some of the popular deals amongst our users.</p>
-				</header>
-				
-				<div class="fly-in mp-popular-row" >
-					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="tour_detail.html">
-								<img alt="" src="img/offer-big-01.jpg" />
-								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
-								</span>
-							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="tour_detail.html">Paris, france</a></div>
-								<div class="offer-slider-l">
-									<span><img alt="" src="img/mmt.png"></span>
-									<div class="offer-slider-location">3 Days 2 Nights</div>
 
-								</div>
-								<div class="offer-slider-r align-right">
-									<nav class="stars">
-										<ul>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-a.png" /></a></li>
-										</ul>
-										<div class="clear"></div>
-									</nav>
-									<b>Rs.40,000/-</b>
-									<span>price</span>
-								</div>
-								<div class="offer-slider-devider"></div>								
-								<div class="clear"></div>
-							</div>
-						</div>
-					<!-- \\ -->
-					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="tour_detail.html">
-								<img alt="" src="img/kerala.jpg" />
-								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
-								</span>
-							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="tour_detail.html">Kerala , India</a></div>
-								<div class="offer-slider-l">
-									<span><img alt="" src="img/cleartrip.png"></span>
-									<div class="offer-slider-location">2 Days , 1 Night</div>
-
-								</div>
-								<div class="offer-slider-r align-right">
-									<nav class="stars">
-										<ul>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-a.png" /></a></li>
-										</ul>
-										<div class="clear"></div>
-									</nav>
-									<b>Rs.12,000/-</b>
-									<span>price</span>
-								</div>
-								<div class="offer-slider-devider"></div>								
-								<div class="clear"></div>
-							</div>
-						</div>
-					<!-- \\ -->	
-					<!-- // -->
-						<div class="offer-slider-i">
-							<a class="offer-slider-img" href="tour_detail.html">
-								<img alt="" src="img/offer-big-02.jpg" />
-								<span class="offer-slider-overlay">
-									<span class="offer-slider-btn">view details</span>
-								</span>
-							</a>
-							<div class="offer-slider-txt">
-								<div class="offer-slider-link"><a href="tour_detail.html">london, england</a></div>
-								<div class="offer-slider-l">
-									<span><img alt="" src="img/yatra.png"></span>
-									<div class="offer-slider-location">5 Days 2 Nights</div>
-
-								</div>
-								<div class="offer-slider-r align-right">
-									<nav class="stars">
-										<ul>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-b.png" /></a></li>
-											<li><a href="#"><img alt="" src="img/star-a.png" /></a></li>
-										</ul>
-										<div class="clear"></div>
-									</nav>
-									<b>Rs.72,000/-</b>
-									<span>price</span>
-								</div>
-								<div class="offer-slider-devider"></div>								
-								<div class="clear"></div>
-							</div>
-						</div>
-					<!-- \\ -->
-				</div>
-				<div class="clear"></div>						
-			</div>
 
 
 		</div>
@@ -1074,7 +1167,7 @@
 				<div class="footer-tour-r">
 					<div class="footer-tour-a">amsterdam Tour & Activities</div>
 					<div class="footer-tour-b">location: netherlands</div>
-					<div class="footer-tour-c">Rs.41,000/-</div>
+					<div class="footer-tour-c">&#8377; 41,000/-</div>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -1096,7 +1189,7 @@
 				<div class="footer-tour-r">
 					<div class="footer-tour-a">vienna Tour & Activities</div>
 					<div class="footer-tour-b">location: austria</div>
-					<div class="footer-tour-c">Rs.90,000/-</div>
+					<div class="footer-tour-c">&#8377; 90,000/-</div>
 				</div>
 				<div class="clear"></div>
 			</div>
